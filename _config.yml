@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "KeunJu Song"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/my_main_image.jpg"   # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Developer & Graduate Student who major in Electronic Engineering"
   location         : "Seoul, Korea"
   email            : "kjsong4089@gmail.com"
