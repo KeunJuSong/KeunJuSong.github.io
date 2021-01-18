@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Aquarium Automation System 개발 이야기"
 ---
 
