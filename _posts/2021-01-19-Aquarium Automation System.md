@@ -1,7 +1,7 @@
 ---
 title: "Aquarium Automation System"
 permalink: /projects/aquarium automation system/
-excerpt: "Implement Aquarium Automation System with Arduino,Sensors,App Inventor"
+excerpt: "Aquarium Automation System is Automated management and monitoring systems that consisted of Arduino and mobile application."
 ---
 
 안녕하세요, Algorithm 분석을 좋아하는 SKJ입니다.
