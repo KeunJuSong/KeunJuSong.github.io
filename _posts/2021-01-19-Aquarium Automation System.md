@@ -35,6 +35,7 @@ Googling을 통해서 프로젝트의 구성은 물론, 개발에 있어 유용�
 * [Hackster.io](https://www.hackster.io/)
 * Hackster.io는 다양한 주제의 임베디드 시스템 프로젝트들을 포스팅한 사이트입니다.
 
-# Simple Description of the Project
-
-소개해드린 수족관 자동화 시스템에 대한 참조용 pamphlet 입니다.
+<figure>
+  <img src="{{ '/assets/images/[CP-CoP]_Auqarium-Automation-System-pamphlet.png' | relative_url }}" alt="Aquarium Automation System Pamphlet">
+  <figcaption>Pamphlet of Auqarium Automation System.</figcaption>
+</figure>
