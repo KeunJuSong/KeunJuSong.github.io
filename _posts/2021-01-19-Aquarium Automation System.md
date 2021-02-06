@@ -1,6 +1,6 @@
 ---
 title: "Aquarium Automation System"
-permalink: /posts/aquarium automation system/
+permalink: /projects/aquarium automation system/
 excerpt: "Implement Aquarium Automation System with Arduino,Sensors,App Inventor"
 ---
 
