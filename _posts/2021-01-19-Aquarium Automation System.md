@@ -1,7 +1,7 @@
 ---
 title: "Aquarium Automation System"
-permalink: /posts/automation aquarium system/
-excerpt: "Implement Aquarium Automation System with Arduino, Sensors, App Inventor
+permalink: /posts/aquarium automation system/
+excerpt: "Implement Aquarium Automation System with Arduino,Sensors,App Inventor"
 layout: single
 ---
 
@@ -39,5 +39,3 @@ Googling을 통해서 프로젝트의 구성은 물론, 개발에 있어 유용�
 # Simple Description of the Project
 
 소개해드린 수족관 자동화 시스템에 대한 참조용 pamphlet 입니다.
-
-<img src="https://user-images.githubusercontent.com/48046183/103457687-af5aa400-4d44-11eb-8525-f4710b63e69f.jpg"  width="70%">
