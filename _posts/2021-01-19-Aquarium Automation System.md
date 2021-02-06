@@ -2,7 +2,6 @@
 title: "Aquarium Automation System"
 permalink: /posts/aquarium automation system/
 excerpt: "Implement Aquarium Automation System with Arduino,Sensors,App Inventor"
-layout: archive
 ---
 
 안녕하세요, Algorithm 분석을 좋아하는 SKJ입니다.
