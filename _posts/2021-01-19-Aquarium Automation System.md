@@ -1,6 +1,8 @@
 ---
+title: "Aquarium Automation System"
+permalink: /posts/automation aquarium system/
+excerpt: "Implement Aquarium Automation System with Arduino, Sensors, App Inventor
 layout: single
-title:  "Aquarium Automation System 개발 이야기"
 ---
 
 안녕하세요, Algorithm 분석을 좋아하는 SKJ입니다.
