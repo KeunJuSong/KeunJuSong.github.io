@@ -27,6 +27,7 @@ Googling을 통해서 프로젝트의 구성은 물론, 개발에 있어 유용�
 결국 이 모든 것들이 앞으로 프로젝트를 진행할 때 creative한 idea로 이어질 수 있습니다.
 따라서 어떠한 프로젝트를 개발하고자 할 때, Googling 활동을 하는 것을 추천합니다.
 
-첫 Thinking Box를 마치며, 제가 Googling을 통해 알게 된 유용한 프로젝트 참조 사이트를 소개해 드리고자 합니다.
+---
+이상으로 첫 Thinking Box를 마치며, 제가 Googling을 통해 알게 된 유용한 프로젝트 참조 사이트를 소개해 드리고자 합니다.
 * [Hackster.io](https://www.hackster.io/)
 * Hackster.io는 다양한 주제의 임베디드 시스템 프로젝트들을 포스팅한 사이트입니다.
