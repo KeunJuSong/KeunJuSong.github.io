@@ -1,20 +1,20 @@
 ---
 title: "Aquarium Automation System"
-permalink: /projects/aquarium automation system/
+permalink: /projects/aquarium-automation-system/
 excerpt: "Aquarium Automation System is Automated management and monitoring systems that consisted of Arduino and mobile application."
 ---
 
-안녕하세요, Algorithm 분석을 좋아하는 SKJ입니다. Dev Box 블로그의 첫 Thinking Box는 수족관 자동화 시스템입니다.
+안녕하세요, Algorithm 분석을 좋아하는 SKJ입니다. Dev Box 블로그의 첫 Thinking Projects는 수족관 자동화 시스템입니다.
 
 수족관 자동화 시스템은 당시 학교 교내 팀 프로젝트 공모전에 참여해 개발했던 작품입니다.
 
-전반적인 프로젝트에 대한 소스코드와 내용은 [SKJ's Github repositroies](https://github.com/KeunJuSong?tab=repositories)에 있으니 참고하시면 되겠습니다.
+전반적인 프로젝트에 대한 소스코드와 내용은 [SKJ's Github repositroies](https://github.com/KeunJuSong/Aquarium-Automation-System)에 있으니 참고하시면 되겠습니다.
 <figure>
   <img src="{{ '/assets/images/[CP-CoP]_Auqarium-Automation-System-pamphlet.png' | relative_url }}" alt="Aquarium Automation System Pamphlet">
   <figcaption>Pamphlet of Auqarium Automation System.</figcaption>
 </figure>
 
-# TIP - Idea? Not just creative thinking. Refer simillar examples! 
+# Idea - Not just creative thinking. Refer simillar examples! 
 저는 당시 팀원들과 주제를 정하기 위해 brainstorming 한 결과, 수족관을 주제로 자동화 시스템을 개발하기로 했습니다.
 저의 역할는 전반적인 프로젝트의 개발 방향을 잡는 것이었기 때문에 많은 고민을 했습니다.
 
