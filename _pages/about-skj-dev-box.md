@@ -3,7 +3,6 @@ permalink: /about/
 layout: single
 title: "SKJ Dev Box"
 excerpt: "SKJ Dev Box is a kind of thinking box that dealing with AI. The purpose of this blog is to share a idea, especially how to approach and apply algorithms."
-toc: true
 ---
 
 ## Keun Ju Song
