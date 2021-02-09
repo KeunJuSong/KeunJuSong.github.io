@@ -35,4 +35,4 @@ The main reason is to share knowledge just like open source platform, Github. I 
 
 I usually handle Machine Learning algorithm, especially about origin and applications.
 
-I'm pleased about any kind of advice for my blog posts. So if you have some question or advice, please send it to my e-mail :smile:.
+I'm pleased about any kind of advice for my blog posts. So if you have some question or advice, please send it to my e-mail  :smile:.
