@@ -9,7 +9,8 @@ excerpt: "SKJ Dev Box is a kind of thinking box that dealing with AI. The purpos
 <img src="/assets/images/SongKeunJu.jpg" alt="Keun Ju Song"
        height="243" width="185">
 
-- SKJ Dev Box manager & Graduate Student
+- SKJ Dev Box manager
+- Graduate Student in [NICELAB](https://nice.sogang.ac.kr/), Sogang University
 
 ### Education
 
