@@ -14,7 +14,7 @@ toc: true
 
 <figure>
   <img src="{{ '/assets/images/skj.png' | relative_url }}" alt="Keun Ju Song"
-       height="280" width="180">
+       height="113" width="85">
 </figure>
 
 - SKJ Dev Box manager & Graduate Student
