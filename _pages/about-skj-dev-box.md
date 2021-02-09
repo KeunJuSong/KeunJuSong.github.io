@@ -7,7 +7,7 @@ excerpt: "SKJ Dev Box is a kind of thinking box that dealing with AI. The purpos
 ## Keun Ju Song
 
 <img src="/assets/images/SongKeunJu.jpg" alt="Keun Ju Song"
-       height="343" width="305">
+       height="243" width="185">
 
 - SKJ Dev Box manager & Graduate Student
 
