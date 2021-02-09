@@ -12,10 +12,8 @@ toc: true
 
 ## Keun Ju Song
 
-<figure>
-  <img src="{{ '/assets/images/skj.png' | relative_url }}" alt="Keun Ju Song"
+<img src="/assets/images/skj.png" alt="Keun Ju Song"
        height="113" width="85">
-</figure>
 
 - SKJ Dev Box manager & Graduate Student
 
