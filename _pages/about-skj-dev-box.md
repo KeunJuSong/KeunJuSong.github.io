@@ -32,8 +32,8 @@ excerpt: "SKJ Dev Box is a kind of thinking box that dealing with AI. The purpos
 
 ## Purpose of SKJ Dev Box
 
-The main reason is to share knowledge just like open source platform, Github. I believe that sharing idea is a detonator of development in various areas. 
+The main reason is to share knowledge just like open source platform, Github. I believe that sharing is a detonator of development in various areas. 
 
-I usually handle Machine Learning algorithm, especially about origin and applications.
+I usually handles Machine Learning algorithm, especially about the idea of origin and applications.
 
-I'm pleased about any kind of advice for my blog posts. So if you have some question or advice, please send it to my e-mail  :smile:.
+I'm pleased to get any kind of advice for my blog posts. So if you have some questions or advices, please send it to my e-mail  :smile:.
