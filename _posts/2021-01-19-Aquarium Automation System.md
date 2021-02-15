@@ -2,6 +2,7 @@
 title: "Aquarium Automation System"
 permalink: /projects/aquarium-automation-system/
 excerpt: "Aquarium Automation System is Automated management and monitoring systems that consisted of Arduino and mobile application."
+tags: [arduino, app-inventor, aquarium-automation]
 use_math: true
 toc: true
 ---
@@ -10,6 +11,7 @@ toc: true
 
 * Team project that participated in CP-CoP(Creative Project-Community of Practice) competition
 * Embedded System that perform monitoring and actuating all-based on sensing, linked with mobile application
+* If you want to know more information about source code, visit my **[Github](https://github.com/KeunJuSong/Aquarium-Automation-System)**
 
 # **Idea**
 
