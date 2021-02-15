@@ -2,6 +2,7 @@
 title: "Aquarium Automation System"
 permalink: /projects/aquarium-automation-system/
 excerpt: "Aquarium Automation System is Automated management and monitoring systems that consisted of Arduino and mobile application."
+use_math: true
 ---
 
 안녕하세요, Algorithm 분석을 좋아하는 SKJ입니다. Dev Box 블로그의 첫 Thinking Projects는 수족관 자동화 시스템입니다.
