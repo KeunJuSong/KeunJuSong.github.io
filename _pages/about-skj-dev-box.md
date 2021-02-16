@@ -10,11 +10,11 @@ excerpt: "SKJ Dev Box is a kind of thinking box that dealing with AI. The purpos
        height="243" width="185">
 
 - SKJ Dev Box manager
-- Graduate Student in [NICELAB](https://nice.sogang.ac.kr/), Sogang University
+- Graduate Student in **[NICELAB](https://nice.sogang.ac.kr/)**, Sogang University
 
 ### Education
 
-- 2021~  **Ph.D./M.S. Integrated in Electrical Engineering**
+- 2021~  **Ph.D./M.S. Integrated in Electronic Engineering**
 
   *Sogang University, Seoul, Korea* 
 
