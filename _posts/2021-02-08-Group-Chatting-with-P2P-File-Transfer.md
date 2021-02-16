@@ -160,7 +160,7 @@ toc: true
   * About file transfer between Client#1 and Client#2, I devised some ~~trick(?)~~ solution
 
     * When Client#2 send file lists, **send its content additionally** to Client#1
-    * So if Client#1 select one file, then it can be reasonable to create that file in Client#1 itself
+    * So if Client#1 select one file, then it can be reasonable to create requested file in Client#1 itself
 
 * Result
 
