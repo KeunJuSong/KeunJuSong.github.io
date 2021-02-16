@@ -142,7 +142,7 @@ toc: true
 
     * Structure
 
-      * ```
+      * ```c
         struct dirent {
           long d_ino; 	//l-노드 번호
         	  off_t	d_off;		//offset
@@ -194,10 +194,10 @@ toc: true
 # **Reference**
 
 * Socket Programming
-  * http://beej.us/guide/bgnet/
-  * http://www.stanford.edu/class/cs244a/socket-links.html
-  * http://www.tenouk.com/cnlinuxsockettutorials.html
+  * [http://beej.us/guide/bgnet/](http://beej.us/guide/bgnet/)
+  * [http://www.stanford.edu/class/cs244a/socket-links.html](http://www.stanford.edu/class/cs244a/socket-links.html)
+  * [http://www.tenouk.com/cnlinuxsockettutorials.html](http://www.tenouk.com/cnlinuxsockettutorials.html)
 * Linux/Unix Programming Environment
-  * http://www.unix-ag.uni-siegen.de/docs/unix/unix.html
+  * [http://www.unix-ag.uni-siegen.de/docs/unix/unix.html](http://www.unix-ag.uni-siegen.de/docs/unix/unix.html)
 * Vi Editor
-  * http://www.cs.rit.edu/~cslab/vi.html
+  * [http://www.cs.rit.edu/~cslab/vi.html](http://www.cs.rit.edu/~cslab/vi.html)
