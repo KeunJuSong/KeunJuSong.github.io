@@ -69,12 +69,12 @@ toc: true
     <figcaption>Auqarium Automation System in CP-CoP exhibition</figcaption>
   </figure>
 
-## **Development Environment**
+# **Development Environment**
 
 * Arduino IDE
 * App Inventor 2.0
 
-## **Reference**
+# **Reference**
 
 * [Aquarium Control System DIY blog](https://slowknight.tistory.com/6)
 * [Hackster.io](https://www.hackster.io/)
