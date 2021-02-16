@@ -174,14 +174,14 @@ toc: true
   * Client#1 - Change P2P network and Select 'a-2.txt' file that is third in file list
 
       <figure>
-        <img src="{{ '/assets/images/Group-Chatting-with-P2P-File-Transfer_P2P-File-Transfer-model-Client#1-result.png' | relative_url }}" alt="P2P File Transfer Model Client#1 result">
+        <img src="{{ '/assets/images/Group-Chatting-with-P2P-File-Transfer_P2P-File-Transfer-model-Client1-result.png' | relative_url }}" alt="P2P File Transfer Model Client#1 result">
         <figcaption>P2P File Transfer Model result - Client#1</figcaption>
       </figure> 
 
   * Client#2 - Change P2P network in IP/Port#1 of client#1 and Send file list
 
       <figure>
-        <img src="{{ '/assets/images/Group-Chatting-with-P2P-File-Transfer_P2P-File-Transfer-model-Client#2-result.png' | relative_url }}" alt="P2P File Transfer Model Client#2 result">
+        <img src="{{ '/assets/images/Group-Chatting-with-P2P-File-Transfer_P2P-File-Transfer-model-Client2-result.png' | relative_url }}" alt="P2P File Transfer Model Client#2 result">
         <figcaption>P2P File Transfer Model result - Client#2</figcaption>
       </figure>
 
