@@ -142,7 +142,7 @@ toc: true
 
     * Structure
 
-      ```c
+      ```
       struct dirent {
         long d_ino; 	//l-노드 번호
         	off_t	d_off;		//offset
@@ -193,7 +193,7 @@ toc: true
 
 # **Reference**
 
-* Socket Programmin
+* Socket Programming
   * http://beej.us/guide/bgnet/
   * http://www.stanford.edu/class/cs244a/socket-links.html
   * http://www.tenouk.com/cnlinuxsockettutorials.html
