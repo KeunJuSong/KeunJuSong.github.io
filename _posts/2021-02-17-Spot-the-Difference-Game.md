@@ -90,51 +90,39 @@ toc: true
 
 * Game start & Setting levels difficulty
 
-  ```html
   <figure>
     <img src="{{ '/assets/images/Spot_the_Difference_game-start.jpg' | relative_url }}" alt="Game start screen">
     <figcaption>Game Start</figcaption>
   </figure>
-  ```
 
-  ```html
   <figure>
     <img src="{{ '/assets/images/Spot_the_Difference_level-difficulty.png' | relative_url }}" alt="Level difficulty">
     <figcaption>Level difficulty</figcaption>
   </figure>
-  ```
 
 * Game play screen
 
-  ```html
   <figure>
     <img src="{{ '/assets/images/Spot_the_Difference_game-play1.png' | relative_url }}" alt="Game play-inital">
     <figcaption>Game Play - Inital mode</figcaption>
   </figure>
-  ```
 
-  ```html
   <figure>
     <img src="{{ '/assets/images/Spot_the_Difference_game-play2.png' | relative_url }}" alt="Game play-run">
     <figcaption>Game Play - Running mode</figcaption>
   </figure>
-  ```
 
 * Game clear & over
 
-  ```html
   <figure>
     <img src="{{ '/assets/images/Spot_the_Difference_game-clear.png' | relative_url }}" alt="Game Clear">
     <figcaption>Game Clear</figcaption>
   </figure>
-  ```
 
-  ```html
   <figure>
     <img src="{{ '/assets/images/Spot_the_Difference_game-over.jpg' | relative_url }}" alt="Game Over">
     <figcaption>Game Over</figcaption>
   </figure>
-  ```
 
 # **Development Environment**
 
