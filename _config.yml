@@ -268,6 +268,12 @@ compress_html:
   ignore:
     envs: development
 
+# Collections
+collections:
+  batteryai:
+    output: true
+    permalink: /:collection/:path/
+
 # Defaults
 defaults:
   # _posts
@@ -289,3 +295,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _recipes
+  - scope:
+      path: ""
+      type: batteryai
+    values:
+      layout: single
+      author_profile: true
+      comments: true
