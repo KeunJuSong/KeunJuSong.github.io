@@ -1,7 +1,8 @@
 ---
 title: "Battery AI - Introduction to Battery Management System"
+excerpt: "Looking for Basic of Lithium Ion Battery & overview of BMS"
 toc: true
-math_use: true
+use_math: true
 ---
 
 :star: **This archive is refer from NICELAB Seminar** :star:
