@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /about/  
   - title: "Battery AI"
-    url: /battery-ai-archive/
+    url: /batteryai/
   - title: "Projects"
     url: /projects/
   # - title: "Sample Posts"
