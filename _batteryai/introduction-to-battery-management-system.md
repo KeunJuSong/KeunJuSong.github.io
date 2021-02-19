@@ -1,5 +1,7 @@
 ---
 title: "Battery AI - Introduction to Battery Management System"
+toc: true
+math_use: true
 ---
 
 :star: **This archive is refer from NICELAB Seminar** :star:
