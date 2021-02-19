@@ -3,7 +3,6 @@ title: "Aquarium Automation System"
 permalink: /projects/aquarium-automation-system/
 excerpt: "Aquarium Automation System is Automated management and monitoring systems that consisted of Arduino and mobile application."
 tags: [arduino, app-inventor, aquarium-automation]
-use_math: true
 toc: true
 ---
 
