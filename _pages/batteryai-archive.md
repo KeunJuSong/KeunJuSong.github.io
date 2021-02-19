@@ -2,7 +2,7 @@
 layout: collection
 title: "Battery AI"
 collection: batteryai
-permalink: /battery-ai-archive/
+permalink: /batteryai/
 author_profile: true
 ---
 
