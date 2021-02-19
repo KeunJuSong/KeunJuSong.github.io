@@ -297,8 +297,8 @@ defaults:
       author_profile: true
   # _batteryai
   - scope:
-      path: "_batteryai"
-      type: pages
+      path: ""
+      type: batteryai
     values:
       layout: single
       author_profile: true
