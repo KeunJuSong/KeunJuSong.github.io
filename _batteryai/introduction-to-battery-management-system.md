@@ -17,7 +17,9 @@ use_math: true
 
 2. Long Life ⇒ More than 500 cycles
 
-   **Photo position(1)**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAi_1-(1).png' | relative_url }}" alt="Battery AI_1-(1)">
+  </figure>
 
 🗯️ Lithium air, Zinc air 
 - 음극(-)은 공기 중에 사용, 즉 양극(+)만 구성.  부피 ↓ 무게 ↓ → 에너지 밀도 ↑
@@ -32,16 +34,18 @@ use_math: true
   3. Electrolyte
   4. Separator
   5. Current Collectors
-
-  **Photo position(2)**
+    
+  <figure>
+    <img src="{{ '/assets/images/BatteryAi_1-(2).png' | relative_url }}" alt="Battery AI_1-(2)">
+  </figure>
 
 - Roles of each part
   1. Negative electrode 
-     - Discharge : - 극 산화 → 전자 배출
-     - Charge : - 극 환원 → 잔자 수용
+     - Discharge : 음극(-) 산화 → 전자 배출
+     - Charge : 음극(-) 환원 → 잔자 수용
   2. Positive electrode
-     - Discharge : + 환원 → 전자 수용
-     - Charge : + 극 산화 → 전자 배출
+     - Discharge : 양극(+) 환원 → 전자 수용
+     - Charge : 양극(+) 산화 → 전자 배출
   3. Electrolyte
      - Negative & Positive의 전자 수용 및 배출은 모두 외부 회로에서 이뤄짐
      - 이에 상응하여 내부에서는 Ion의 이동(Diffusion 현상)이 필요
@@ -64,8 +68,10 @@ use_math: true
 
   1. Open crystals structures (빈 공간에 리튬 삽입 / 추출)
   2. Ablilty to accept compensating electrons (전자 수용 능력)
-
-  **Photo position(3)**
+  
+  <figure>
+    <img src="{{ '/assets/images/BatteryAi_1-(3).png' | relative_url }}" alt="Battery AI_1-(3)">
+  </figure>
 
 - Negative electrode : graphite (흑연)
 
@@ -75,20 +81,25 @@ use_math: true
 
 - Positive electrode : 양극 활물질(리튬 금속 산화물 = 결합형태) (5개 종류 - LCO, NCM, NCA, LMO, LFP)
 
-  **Photo position(4)**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAi_1-(4).png' | relative_url }}" alt="Battery AI_1-(4)">
+  </figure>
 
   - 활물질 사용 이유 : 순수 리튬은 화학반응에 예민 ⇒ 불안정 So, make it Stable!
 
-- 아래 화학식 참조 (왼: Negative electrode  오: Positive electrode)
-
-  **Photo position(5)**
+- 아래 화학식 참조 (Left: Negative electrode  Right: Positive electrode)
+  
+  <figure>
+    <img src="{{ '/assets/images/BatteryAi_1-(5).png' | relative_url }}" alt="Battery AI_1-(5)">
+  </figure>
 
 - Powder 입자
 
-  **Photo position(6)**
-
-  왼) Positive electrode Powder 입자     오)  Negative electrode Powder 입자 → this line is for caption.
-
+  <figure>
+    <img src="{{ '/assets/images/BatteryAi_1-(6).png' | relative_url }}" alt="Battery AI_1-(6)">
+    <figcaption>Left: Positive electrode Powder, Right: Negative electrode Powder</figcaption>
+  </figure>
+  
   💡 3가지의 복합 형태
   1. 활물질 - 화학반응에 직접 관여
   2. 도전제 - 활물질들의 전도성 ↑
@@ -117,7 +128,9 @@ use_math: true
 
 ## **General BMS functionality**
 
-**Photo position(7)**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAi_1-(7).png' | relative_url }}" alt="Battery AI_1-(7)">
+  </figure>
 
 - Sensing and high-voltage control
   - Measure voltage, current, temperature of the each cells
@@ -193,7 +206,9 @@ use_math: true
 
 - cell SOC is like :
 
-  **Photo position(8)**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAi_1-(8).png' | relative_url }}" alt="Battery AI_1-(8)">
+  </figure>
 
 ### **How does SOC relate to cell voltage?**
 
@@ -208,7 +223,9 @@ use_math: true
 
 - SOC is related to cell current via
 
-  **Photo position(9)**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAi_1-(9).png' | relative_url }}" alt="Battery AI_1-(9)">
+  </figure>
 
 - $\eta$ is coulombic efficiency → 1에 근접하지만 1 이하
 
@@ -218,7 +235,9 @@ use_math: true
 
 ### **What about "pack SOC"?**
 
-**Photo position(10)**
+<figure>
+  <img src="{{ '/assets/images/BatteryAi_1-(10).png' | relative_url }}" alt="Battery AI_1-(10)">
+</figure>
 
 - pack SOC is ill-defined, so should never be used → 기준이 애매모호
 - Issue : 이러한 문제는 cell balancing의 필요성을 제기함
@@ -233,7 +252,9 @@ use_math: true
   - 방전 전류 인가 시 전압 강하, 충전 전류 인가 시 전압 상승 특성을 이용하여 내부 저항을 구함
   - cell resistance를 알면 배터리가 감당할 수 있는 전류의 양을 계산할 수 있음
 
-**Photo position(11)**
+<figure>
+  <img src="{{ '/assets/images/BatteryAi_1-(11).png' | relative_url }}" alt="Battery AI_1-(11)">
+</figure>
 
 🗯️ Moving-Window Power limits
 - Calculate(사용 가능 전력) to enforce design limits (e.g., on cell voltage and current), predictive over $\Delta T$(일반적으로 10~20초) second future time horizon
@@ -244,17 +265,23 @@ use_math: true
 
 - For HPPC discharge power, assume simplified cell model
 
-  **Photo position(12)**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAi_1-(12).png' | relative_url }}" alt="Battery AI_1-(12)">
+  </figure>
 
 - Assume concerning only with keeping cell voltage between $V_{min}$ and $V_{max}$
 
 - For discharge power, set $R = R_{dis, \Delta T}$ and clamp $v(t) = v_{min}$
 
-  **Photo position(13)**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAi_1-(13).png' | relative_url }}" alt="Battery AI_1-(13)">
+  </figure>
 
 - Simillar with charge power, set $R = R_{chg, \Delta T}$ and clamp $v(t) = v_{max}$
 
-  **Photo position(14)**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAi_1-(14).png' | relative_url }}" alt="Battery AI_1-(14)">
+  </figure>
 
 - HPPC test는 평형 상태를 가정 → 따라서 이 경우 power limit을 HPPC test 값보다 낮게 설정!
 
