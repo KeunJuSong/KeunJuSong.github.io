@@ -6,4 +6,4 @@ permalink: /batteryai/
 author_profile: true
 ---
 
-Documents of Battery AI, in NICELAB.
+Archive of Battery AI, in **[NICELAB](https://nice.sogang.ac.kr/)**.
