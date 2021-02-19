@@ -91,14 +91,14 @@ use_math: true
   
   <figure>
     <img src="{{ '/assets/images/BatteryAi_1-(5).png' | relative_url }}" alt="Battery AI_1-(5)">
-    <figcaption>Left: Negative electrode     Right: Positive electrode</figcaption>
+    <figcaption>Left: Negative electrode   /  Right: Positive electrode</figcaption>
   </figure>
 
 - Powder 입자
 
   <figure>
     <img src="{{ '/assets/images/BatteryAi_1-(6).png' | relative_url }}" alt="Battery AI_1-(6)">
-    <figcaption>Left: Positive electrode Powder     Right: Negative electrode Powder</figcaption>
+    <figcaption>Left: Positive electrode Powder  /  Right: Negative electrode Powder</figcaption>
   </figure>
   
   💡 3가지의 복합 형태
