@@ -18,7 +18,7 @@ use_math: true
 2. Long Life ⇒ More than 500 cycles
 
   <figure>
-    <img src="{{ '/assets/images/BatteryAi_1-(1).png' | relative_url }}" alt="Battery AI_1-(1)">
+    <img src="{{ '/assets/images/BatteryAi_1-(1).png' | relative_url }}" alt="Battery AI_1-(1)" width="419" height="218" >
   </figure>
 
 🗯️ Lithium air, Zinc air 
@@ -36,7 +36,7 @@ use_math: true
   5. Current Collectors
     
   <figure>
-    <img src="{{ '/assets/images/BatteryAi_1-(2).png' | relative_url }}" alt="Battery AI_1-(2)">
+    <img src="{{ '/assets/images/BatteryAi_1-(2).png' | relative_url }}" alt="Battery AI_1-(2)" width="456" height="90">
   </figure>
 
 - Roles of each part
