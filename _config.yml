@@ -297,7 +297,7 @@ defaults:
       author_profile: true
   # _batteryai
   - scope:
-      path: ""
+      path: "_batteryai"
       type: batteryai
     values:
       layout: single
