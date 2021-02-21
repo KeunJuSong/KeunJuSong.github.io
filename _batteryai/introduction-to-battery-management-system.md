@@ -18,7 +18,7 @@ use_math: true
 2. Long Life ⇒ More than 500 cycles
   
   <img src="/assets/images/BatteryAi_1-(1).png" alt="Battery_AI_1-(1)"
-       height="310" width="475">
+       height="330" width="495">
 
 🗯️ Lithium air, Zinc air 
 - 음극(-)은 공기 중에 사용, 즉 양극(+)만 구성.  부피 ↓ 무게 ↓ → 에너지 밀도 ↑
@@ -35,7 +35,7 @@ use_math: true
   5. Current Collectors
   
   <img src="/assets/images/BatteryAi_1-(2).png" alt="Battery_AI_1-(2)"
-       height="175" width="450">
+       height="210" width="490">
   
 - Roles of each part
   1. Negative electrode 
@@ -68,7 +68,7 @@ use_math: true
   2. Ablilty to accept compensating electrons (전자 수용 능력)
   
   <img src="/assets/images/BatteryAi_1-(3).png" alt="Battery_AI_1-(3)"
-       height="285" width="345">
+       height="330" width="395">
 
 - Negative electrode : graphite (흑연)
 
@@ -128,7 +128,7 @@ use_math: true
 ## **General BMS functionality**
 
   <img src="/assets/images/BatteryAi_1-(7).png" alt="Battery_AI_1-(7)"
-   height="300" width="425">
+   height="350" width="495">
   
 - Sensing and high-voltage control
   - Measure voltage, current, temperature of the each cells
