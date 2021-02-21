@@ -18,7 +18,7 @@ use_math: true
 2. Long Life ⇒ More than 500 cycles
   <figure>
     <img src="/assets/images/BatteryAi_1-(1).png" alt="Battery_AI_1-(1)"
-       height="419" width="218">
+       height="218" width="419">
   </figure>
 
 🗯️ Lithium air, Zinc air 
@@ -37,7 +37,7 @@ use_math: true
 
   <figure>
     <img src="/assets/images/BatteryAi_1-(2).png" alt="Battery_AI_1-(2)"
-       height="456" width="90">
+       height="90" width="456">
   </figure>
   
 - Roles of each part
