@@ -231,9 +231,11 @@ use_math: true
 💡 Coulombic Counting method is very hard to use because of lots of noise. (오차 누적)
 
 ### **What about "pack SOC"?**
-
-  <img src="/assets/images/BatteryAi_1-(10).png" alt="Battery_AI_1-(10)"
-    height="270" width="160">
+  
+  <figure>
+    <img src="/assets/images/BatteryAi_1-(10).png" alt="Battery_AI_1-(10)"
+      height="270" width="160">
+  </figure>
   
 - pack SOC is ill-defined, so should never be used → 기준이 애매모호
 - Issue : 이러한 문제는 cell balancing의 필요성을 제기함
