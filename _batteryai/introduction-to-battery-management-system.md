@@ -34,10 +34,9 @@ use_math: true
   4. Separator
   5. Current Collectors
 
-  <figure>
-    <img src="/assets/images/BatteryAi_1-(2).png" alt="Battery_AI_1-(2)"
+  
+  <img src="/assets/images/BatteryAi_1-(2).png" alt="Battery_AI_1-(2)"
        height="130" width="400">
-  </figure>
   
 - Roles of each part
   1. Negative electrode 
@@ -69,10 +68,8 @@ use_math: true
   1. Open crystals structures (빈 공간에 리튬 삽입 / 추출)
   2. Ablilty to accept compensating electrons (전자 수용 능력)
   
-  <figure>
-    <img src="/assets/images/BatteryAi_1-(3).png" alt="Battery_AI_1-(3)"
+  <img src="/assets/images/BatteryAi_1-(3).png" alt="Battery_AI_1-(3)"
        height="220" width="290">
-  </figure>
 
 - Negative electrode : graphite (흑연)
 
@@ -90,11 +87,9 @@ use_math: true
 
 - 아래 화학식 참조 (Left: Negative electrode  Right: Positive electrode)
 
-  <figure>
     <img src="/assets/images/BatteryAi_1-(5).png" alt="Battery_AI_1-(5)"
        height="50" width="340">
-     <figcaption>Left: Negative electrode   /  Right: Positive electrode</figcaption>
-  </figure>
+    <caption>Left: Negative electrode   /  Right: Positive electrode</caption>
   
 - Powder 입자
 
@@ -131,11 +126,9 @@ use_math: true
 
 ## **General BMS functionality**
 
-  <figure>
-    <img src="/assets/images/BatteryAi_1-(7).png" alt="Battery_AI_1-(7)"
-       height="240" width="355">
-  </figure>
-
+  <img src="/assets/images/BatteryAi_1-(7).png" alt="Battery_AI_1-(7)"
+   height="240" width="355">
+  
 - Sensing and high-voltage control
   - Measure voltage, current, temperature of the each cells
   - Pre-charge for control contactor
@@ -210,11 +203,9 @@ use_math: true
 
 - cell SOC is like :
 
-  <figure>
-    <img src="/assets/images/BatteryAi_1-(8).png" alt="Battery_AI_1-(8)"
+  <img src="/assets/images/BatteryAi_1-(8).png" alt="Battery_AI_1-(8)"
        height="70" width="350">
-  </figure>
-
+  
 ### **How does SOC relate to cell voltage?**
 
 - Cell voltage depends on Li surface concentration in particles that contact positive and negative current collectros
@@ -228,10 +219,8 @@ use_math: true
 
 - SOC is related to cell current via
 
-  <figure>
-    <img src="/assets/images/BatteryAi_1-(9).png" alt="Battery_AI_1-(9)"
+  <img src="/assets/images/BatteryAi_1-(9).png" alt="Battery_AI_1-(9)"
        height="65" width="290">
-  </figure>
 
 - $\eta$ is coulombic efficiency → 1에 근접하지만 1 이하
 
@@ -241,11 +230,9 @@ use_math: true
 
 ### **What about "pack SOC"?**
 
-  <figure>
-    <img src="/assets/images/BatteryAi_1-(10).png" alt="Battery_AI_1-(10)"
-       height="240" width="130">
-  </figure>
-
+  <img src="/assets/images/BatteryAi_1-(10).png" alt="Battery_AI_1-(10)"
+    height="240" width="130">
+  
 - pack SOC is ill-defined, so should never be used → 기준이 애매모호
 - Issue : 이러한 문제는 cell balancing의 필요성을 제기함
 - But we want to know battery pack's available energy!!
@@ -259,10 +246,8 @@ use_math: true
   - 방전 전류 인가 시 전압 강하, 충전 전류 인가 시 전압 상승 특성을 이용하여 내부 저항을 구함
   - cell resistance를 알면 배터리가 감당할 수 있는 전류의 양을 계산할 수 있음
 
-  <figure>
     <img src="/assets/images/BatteryAi_1-(11).png" alt="Battery_AI_1-(11)"
        height="200" width="330">
-  </figure>
 
 🗯️ Moving-Window Power limits
 - Calculate(사용 가능 전력) to enforce design limits (e.g., on cell voltage and current), predictive over $\Delta T$(일반적으로 10~20초) second future time horizon
@@ -281,17 +266,13 @@ use_math: true
 
 - For discharge power, set $R = R_{dis, \Delta T}$ and clamp $v(t) = v_{min}$
 
-  <figure>
     <img src="/assets/images/BatteryAi_1-(13).png" alt="Battery_AI_1-(13)"
        height="50" width="310">
-  </figure>
 
 - Simillar with charge power, set $R = R_{chg, \Delta T}$ and clamp $v(t) = v_{max}$
 
-  <figure>
     <img src="/assets/images/BatteryAi_1-(14).png" alt="Battery_AI_1-(14)"
        height="50" width="310">
-  </figure>
 
 - HPPC test는 평형 상태를 가정 → 따라서 이 경우 power limit을 HPPC test 값보다 낮게 설정!
 
