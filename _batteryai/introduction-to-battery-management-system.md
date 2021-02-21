@@ -16,9 +16,9 @@ use_math: true
 1. Lower Self Discharge Rate
 
 2. Long Life ⇒ More than 500 cycles
-
   <figure>
-    <img src="{{ '/assets/images/BatteryAi_1-(1).png' | relative_url }}" alt="Battery AI_1-(1)" width="419" height="218" >
+    <img src="/assets/images/BatteryAi_1-(1).png" alt="Battery_AI_1-(1)"
+       height="419" width="218">
   </figure>
 
 🗯️ Lithium air, Zinc air 
@@ -34,11 +34,12 @@ use_math: true
   3. Electrolyte
   4. Separator
   5. Current Collectors
-    
-  <figure>
-    <img src="{{ '/assets/images/BatteryAi_1-(2).png' | relative_url }}" alt="Battery AI_1-(2)" width="456" height="90">
-  </figure>
 
+  <figure>
+    <img src="/assets/images/BatteryAi_1-(2).png" alt="Battery_AI_1-(2)"
+       height="456" width="90">
+  </figure>
+  
 - Roles of each part
   1. Negative electrode 
      - Discharge : 음극(-) 산화 → 전자 배출
