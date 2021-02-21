@@ -16,10 +16,9 @@ use_math: true
 1. Lower Self Discharge Rate
 
 2. Long Life ⇒ More than 500 cycles
-  <figure>
-    <img src="/assets/images/BatteryAi_1-(1).png" alt="Battery_AI_1-(1)"
+  
+  <img src="/assets/images/BatteryAi_1-(1).png" alt="Battery_AI_1-(1)"
        height="250" width="419">
-  </figure>
 
 🗯️ Lithium air, Zinc air 
 - 음극(-)은 공기 중에 사용, 즉 양극(+)만 구성.  부피 ↓ 무게 ↓ → 에너지 밀도 ↑
