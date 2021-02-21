@@ -18,7 +18,7 @@ use_math: true
 2. Long Life ⇒ More than 500 cycles
   
   <img src="/assets/images/BatteryAi_1-(1).png" alt="Battery_AI_1-(1)"
-       height="250" width="419">
+       height="280" width="449">
 
 🗯️ Lithium air, Zinc air 
 - 음극(-)은 공기 중에 사용, 즉 양극(+)만 구성.  부피 ↓ 무게 ↓ → 에너지 밀도 ↑
@@ -36,7 +36,7 @@ use_math: true
 
   
   <img src="/assets/images/BatteryAi_1-(2).png" alt="Battery_AI_1-(2)"
-       height="130" width="400">
+       height="160" width="430">
   
 - Roles of each part
   1. Negative electrode 
@@ -69,7 +69,7 @@ use_math: true
   2. Ablilty to accept compensating electrons (전자 수용 능력)
   
   <img src="/assets/images/BatteryAi_1-(3).png" alt="Battery_AI_1-(3)"
-       height="220" width="290">
+       height="250" width="310">
 
 - Negative electrode : graphite (흑연)
 
@@ -87,9 +87,11 @@ use_math: true
 
 - 아래 화학식 참조 (Left: Negative electrode  Right: Positive electrode)
 
-    <img src="/assets/images/BatteryAi_1-(5).png" alt="Battery_AI_1-(5)"
-       height="50" width="340">
-    <caption>Left: Negative electrode   /  Right: Positive electrode</caption>
+  <figure>
+    <img src="/assets/images/BatteryAi_1-(5).png" alt="Battery AI_1-(5)"
+         height="55" width="380">
+    <figcaption>Left: Negative electrode  /  Right: Positive electrode </figcaption>
+  </figure>
   
 - Powder 입자
 
@@ -127,7 +129,7 @@ use_math: true
 ## **General BMS functionality**
 
   <img src="/assets/images/BatteryAi_1-(7).png" alt="Battery_AI_1-(7)"
-   height="240" width="355">
+   height="270" width="385">
   
 - Sensing and high-voltage control
   - Measure voltage, current, temperature of the each cells
@@ -204,7 +206,7 @@ use_math: true
 - cell SOC is like :
 
   <img src="/assets/images/BatteryAi_1-(8).png" alt="Battery_AI_1-(8)"
-       height="70" width="350">
+       height="100" width="380">
   
 ### **How does SOC relate to cell voltage?**
 
@@ -231,7 +233,7 @@ use_math: true
 ### **What about "pack SOC"?**
 
   <img src="/assets/images/BatteryAi_1-(10).png" alt="Battery_AI_1-(10)"
-    height="240" width="130">
+    height="270" width="160">
   
 - pack SOC is ill-defined, so should never be used → 기준이 애매모호
 - Issue : 이러한 문제는 cell balancing의 필요성을 제기함
@@ -247,7 +249,7 @@ use_math: true
   - cell resistance를 알면 배터리가 감당할 수 있는 전류의 양을 계산할 수 있음
 
     <img src="/assets/images/BatteryAi_1-(11).png" alt="Battery_AI_1-(11)"
-       height="200" width="330">
+       height="240" width="370">
 
 🗯️ Moving-Window Power limits
 - Calculate(사용 가능 전력) to enforce design limits (e.g., on cell voltage and current), predictive over $\Delta T$(일반적으로 10~20초) second future time horizon
@@ -267,12 +269,12 @@ use_math: true
 - For discharge power, set $R = R_{dis, \Delta T}$ and clamp $v(t) = v_{min}$
 
     <img src="/assets/images/BatteryAi_1-(13).png" alt="Battery_AI_1-(13)"
-       height="50" width="310">
+       height="70" width="370">
 
 - Simillar with charge power, set $R = R_{chg, \Delta T}$ and clamp $v(t) = v_{max}$
 
     <img src="/assets/images/BatteryAi_1-(14).png" alt="Battery_AI_1-(14)"
-       height="50" width="310">
+       height="70" width="370">
 
 - HPPC test는 평형 상태를 가정 → 따라서 이 경우 power limit을 HPPC test 값보다 낮게 설정!
 
