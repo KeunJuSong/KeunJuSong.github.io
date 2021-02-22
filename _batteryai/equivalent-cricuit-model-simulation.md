@@ -222,6 +222,7 @@ use_math: true
 
     - 정의되지 않은 $f$ 를 시뮬레이션을 통해 설계했을 때, 우리는 cell의 terminal voltage $v[k]$ 를 추정할 수 있다
     - 추정한 $v[k]$가 실제 $v[k]$를 잘 following 한다면 우리는 SOC-OCV 정의로부터 $Z[k]$, 즉 $v[k]$ 에 대응하는 보다 정확한 SOC를 추정할 수 있다!
+
   ---
 
 # **Identify Parameters of Static Model**
