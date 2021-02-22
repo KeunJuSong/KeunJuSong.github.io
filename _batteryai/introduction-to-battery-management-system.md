@@ -1,5 +1,5 @@
 ---
-title: "Battery AI - Introduction to Battery Management System"
+title: "Introduction to Battery Management System"
 excerpt: "Looking for Basic of Lithium Ion Battery & overview of BMS"
 toc: true
 use_math: true
