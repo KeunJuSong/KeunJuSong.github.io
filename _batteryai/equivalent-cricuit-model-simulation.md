@@ -165,7 +165,10 @@ use_math: true
 
     **Photo position 16**
 
-    - Left side becomes $\dot h(t)$; on right side, note $$\dot zsgn(\dot z) = |\dot z|$$ and $$\dot z(t) = -\eta(t)i(t)/Q$$
+    - Left side becomes $\dot h(t)$ 
+    - On right side, note 
+      -  $\dot zsgn(\dot z) = |\dot z|$
+      -  $\dot z(t) = -\eta(t)i(t)/Q$
 
       **Photo position 17**
 
