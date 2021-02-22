@@ -165,10 +165,7 @@ use_math: true
 
     **Photo position 16**
 
-    - Left side becomes $\dot h(t)$ 
-    - On right side, note 
-      - $\dot z sgn(\dot z) = \mid \dot z \mid$
-      - $\dot z(t) = -\eta(t)i(t)/Q$
+    - Left side becomes $\dot h(t)$; on right side, note $\dot z sgn(\dot z) = \mid\dot z\mid$ and $\dot z(t) = -\eta(t)i(t)/Q$
 
       **Photo position 17**
 
