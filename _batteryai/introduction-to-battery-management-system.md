@@ -5,7 +5,7 @@ toc: true
 use_math: true
 ---
 
-:star: **This archive is refer from NICELAB Seminar** :star:
+:star: **This archive is refer from NICELAB Seminar & [Algorithms for Battery Management course, Prof. Gregory Plett](https://www.coursera.org/specializations/algorithms-for-battery-management-systems)** :star:
 
 # **Lithium Ion Battery - Basic**
 
