@@ -193,7 +193,7 @@ use_math: true
 
   - Can summarize from below definition!
 
-    - [SOC-OCV](https://keunjusong.github.io/batteryai/equivalent-cricuit-model-simulation/#modeling-ocv--soc)
+    - [SOC-OCV](https://github.com/KeunJuSong/KeunJuSong.github.io/blob/master/_batteryai/equivalent-cricuit-model-simulation.md#modeling-ocv--soc)
     - [Ohmic R - diffusion V](https://keunjusong.github.io/batteryai/equivalent-cricuit-model-simulation/#equation-derivationcircuit-model)
     - [Hysteresis](https://keunjusong.github.io/batteryai/equivalent-cricuit-model-simulation/#equation-derivation-hysteresis-voltage)
 
