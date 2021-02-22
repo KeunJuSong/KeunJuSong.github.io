@@ -229,7 +229,7 @@ use_math: true
 
   - Long time에 대해 온도 변화에 따른 Coulombic eff & Capacity → OCV & SOC 관계
 
-  ## Cell testing steps
+## Cell testing steps
 
   - OCV test script #1 (at test temperature)
 
@@ -348,9 +348,9 @@ use_math: true
 
   **Photo position 37**
 
-  ## Tests Needed to determine dynamic model parameters
+## Tests Needed to determine dynamic model parameters
 
-  ### Discharge/charge calibration portion of test
+### Discharge/charge calibration portion of test
 
   - Dynamic test script #2 (at 25C)
 
