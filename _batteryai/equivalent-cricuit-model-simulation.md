@@ -167,8 +167,8 @@ use_math: true
 
     - Left side becomes $\dot h(t)$ 
     - On right side, note 
-      - $\dot z$ $sgn(\dot z)$ $= |\dot z|$
-      -  $\dot z(t) = -\eta(t)i(t)/Q$
+      - $\dot z sgn(\dot z) = \mid \dot z \mid$
+      - $\dot z(t) = -\eta(t)i(t)/Q$
 
       **Photo position 17**
 
