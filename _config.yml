@@ -295,11 +295,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _recipes
+  # _batteryai
   - scope:
       path: ""
       type: batteryai
     values:
       layout: single
-      author_profile: true
       comments: true
