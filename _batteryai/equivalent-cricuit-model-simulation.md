@@ -171,8 +171,8 @@ use_math: true
     <img src="{{ '/assets/images/BatteryAI_2-(14).png' | relative_url }}" alt="Battery AI_2-(14)">
   </figure>
 
-    - 전압, SOC 측정 시 매우 좋지 못한 현상 → 완전 충전, 완전 방전 부분에서 voltage 값이 튀는 부분
-    - 이를 제거하여 SOC와 voltage에 대한 single curve를 얻기 위함
+   - 전압, SOC 측정 시 매우 좋지 못한 현상 → 완전 충전, 완전 방전 부분에서 voltage 값이 튀는 부분
+   - 이를 제거하여 SOC와 voltage에 대한 single curve를 얻기 위함
 
 ## **Equation derivation (Hysteresis voltage)**
 
