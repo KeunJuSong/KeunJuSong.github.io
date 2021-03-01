@@ -18,7 +18,7 @@ use_math: true
 - **Measure voltage, current, temperature** → From designing Equivalent Cricuit Model!
 
   <figure>
-    <img src="{{ '/assets/images/BatteryAi_2-(1).png' | relative_url }}" alt="Battery AI_2-(1)">
+    <img src="{{ '/assets/images/BatteryAI_2-(1).png' | relative_url }}" alt="Battery AI_2-(1)">
   </figure>
   
 ---
@@ -45,7 +45,7 @@ use_math: true
   - (Charge out) / (Charge in) [unit: 충전량]
 
   <figure>
-    <img src="{{ '/assets/images/BatteryAi_2-(2).png' | relative_url }}" alt="Battery AI_2-(2)">
+    <img src="{{ '/assets/images/BatteryAI_2-(2).png' | relative_url }}" alt="Battery AI_2-(2)">
   </figure>
 
   Caption : Modeling OCV & SOC - Equivalent Curcuit
@@ -53,13 +53,13 @@ use_math: true
 - Continuous time
 
   <figure>
-    <img src="{{ '/assets/images/BatteryAi_2-(3).png' | relative_url }}" alt="Battery AI_2-(3)">
+    <img src="{{ '/assets/images/BatteryAI_2-(3).png' | relative_url }}" alt="Battery AI_2-(3)">
   </figure>
 
 - Discrete time
 
   <figure>
-    <img src="{{ '/assets/images/BatteryAi_2-(4).png' | relative_url }}" alt="Battery AI_2-(4)">
+    <img src="{{ '/assets/images/BatteryAI_2-(4).png' | relative_url }}" alt="Battery AI_2-(4)">
   </figure>
 
 🗯️ Coulombic efficiency VS Energy efficiency
@@ -80,7 +80,7 @@ use_math: true
 - Example
 
   <figure>
-    <img src="{{ '/assets/images/BatteryAi_2-(5).png' | relative_url }}" alt="Battery AI_2-(5)">
+    <img src="{{ '/assets/images/BatteryAI_2-(5).png' | relative_url }}" alt="Battery AI_2-(5)">
   </figure>
   
   - 20 min 동안 constant current(?)로 discharge
@@ -90,11 +90,11 @@ use_math: true
   - Thevenin model
 
   <figure>
-    <img src="{{ '/assets/images/BatteryAi_2-(6).png' | relative_url }}" alt="Battery AI_2-(6)">
+    <img src="{{ '/assets/images/BatteryAI_2-(6).png' | relative_url }}" alt="Battery AI_2-(6)">
   </figure>
 
   <figure>
-    <img src="{{ '/assets/images/BatteryAi_2-(7).png' | relative_url }}" alt="Battery AI_2-(7)">
+    <img src="{{ '/assets/images/BatteryAI_2-(7).png' | relative_url }}" alt="Battery AI_2-(7)">
   </figure>
 
 ## Modeling with Randles Circuit
@@ -104,7 +104,7 @@ use_math: true
     - Cell의 전기화학적 특성을 기반으로 설계하는 방식
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(8).png' | relative_url }}" alt="Battery AI_2-(8)">
+      <img src="{{ '/assets/images/BatteryAI_2-(8).png' | relative_url }}" alt="Battery AI_2-(8)">
     </figure>
 
   - $R_0$ : Models the electrolyte resistance (전해질 저항)
@@ -125,20 +125,20 @@ use_math: true
     - Generically (When $a \ne 0$),
  
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(9).png' | relative_url }}" alt="Battery AI_2-(9)">
+      <img src="{{ '/assets/images/BatteryAI_2-(9).png' | relative_url }}" alt="Battery AI_2-(9)">
     </figure>
 
     - In the special case (When $a = 0$),
     
      <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(10).png' | relative_url }}" alt="Battery AI_2-(10)">
+      <img src="{{ '/assets/images/BatteryAI_2-(10).png' | relative_url }}" alt="Battery AI_2-(10)">
      </figure>
 
 
   - Adapt general equation(above) in our model:
 
   <figure>
-    <img src="{{ '/assets/images/BatteryAi_2-(11).png' | relative_url }}" alt="Battery AI_2-(11)">
+    <img src="{{ '/assets/images/BatteryAI_2-(11).png' | relative_url }}" alt="Battery AI_2-(11)">
   </figure>
 
 ## **Hysteresis voltages**
@@ -158,17 +158,17 @@ use_math: true
     - 이를 제거하여 SOC와 voltage(OCV)에 대한 single curve를 얻기 위함
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(12).png' | relative_url }}" alt="Battery AI_2-(12)">
+      <img src="{{ '/assets/images/BatteryAI_2-(12).png' | relative_url }}" alt="Battery AI_2-(12)">
     </figure>
     
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(13).png' | relative_url }}" alt="Battery AI_2-(13)">
+      <img src="{{ '/assets/images/BatteryAI_2-(13).png' | relative_url }}" alt="Battery AI_2-(13)">
     </figure>
 
   - Experiment result of setting hysteresis model
 
   <figure>
-    <img src="{{ '/assets/images/BatteryAi_2-(14).png' | relative_url }}" alt="Battery AI_2-(14)">
+    <img src="{{ '/assets/images/BatteryAI_2-(14).png' | relative_url }}" alt="Battery AI_2-(14)">
   </figure>
 
     - 전압, SOC 측정 시 매우 좋지 못한 현상 → 완전 충전, 완전 방전 부분에서 voltage 값이 튀는 부분
@@ -179,7 +179,7 @@ use_math: true
   - Combining observations with model (SOC에 따른 Hysteresis 상태 변화)
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(15).png' | relative_url }}" alt="Battery AI_2-(15)">
+      <img src="{{ '/assets/images/BatteryAI_2-(15).png' | relative_url }}" alt="Battery AI_2-(15)">
     </figure>
 
     - $\gamma$  : 수치 조정해주는 상수 (Positive)
@@ -195,13 +195,13 @@ use_math: true
   - To fit differential equation for $h(z,t)$ into cell model, **must manipulate it to be a differential equation in time** (not in SOC)
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(16).png' | relative_url }}" alt="Battery AI_2-(16)">
+      <img src="{{ '/assets/images/BatteryAI_2-(16).png' | relative_url }}" alt="Battery AI_2-(16)">
     </figure>
 
     - Left side becomes $\dot h(t)$; on right side, note $\dot z sgn(\dot z) = \mid\dot z\mid$ and $\dot z(t) = -\eta(t)i(t)/Q$
 
       <figure>
-        <img src="{{ '/assets/images/BatteryAi_2-(17).png' | relative_url }}" alt="Battery AI_2-(17)">
+        <img src="{{ '/assets/images/BatteryAI_2-(17).png' | relative_url }}" alt="Battery AI_2-(17)">
       </figure>
 
     - So we can have continuous hysteresis model
@@ -209,7 +209,7 @@ use_math: true
   - Convert to discrete time
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(18).png' | relative_url }}" alt="Battery AI_2-(18)">
+      <img src="{{ '/assets/images/BatteryAI_2-(18).png' | relative_url }}" alt="Battery AI_2-(18)">
       <figcaption>Apply general equation and show in discrete time</figcaption>
     </figure>
 
@@ -224,7 +224,7 @@ use_math: true
     - Defining new value, $s[k]$ which must get 1 or -1
 
       <figure>
-        <img src="{{ '/assets/images/BatteryAi_2-(19).png' | relative_url }}" alt="Battery AI_2-(19)">
+        <img src="{{ '/assets/images/BatteryAI_2-(19).png' | relative_url }}" alt="Battery AI_2-(19)">
       </figure>
       
 ## ESC(Enhanced Self-Correction) cell model
@@ -238,7 +238,7 @@ use_math: true
   - ESC : State equation - matrix form
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(20).png' | relative_url }}" alt="Battery AI_2-(20)">
+      <img src="{{ '/assets/images/BatteryAI_2-(20).png' | relative_url }}" alt="Battery AI_2-(20)">
     </figure>
       
     - $u[k]$ : 충전/방전 상태, 얼마만큼 속도로 충/방전 되는지
@@ -247,17 +247,17 @@ use_math: true
   - ESC : Output equation
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(21).png' | relative_url }}" alt="Battery AI_2-(21)">
+      <img src="{{ '/assets/images/BatteryAI_2-(21).png' | relative_url }}" alt="Battery AI_2-(21)">
     </figure>
       
   - ESC cell model - Equivalent Circuit
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(22).png' | relative_url }}" alt="Battery AI_2-(22)">
+      <img src="{{ '/assets/images/BatteryAI_2-(22).png' | relative_url }}" alt="Battery AI_2-(22)">
     </figure>
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(23).png' | relative_url }}" alt="Battery AI_2-(23)">
+      <img src="{{ '/assets/images/BatteryAI_2-(23).png' | relative_url }}" alt="Battery AI_2-(23)">
     </figure>
 
   - IDEA of ESC cell model
@@ -287,7 +287,7 @@ use_math: true
     - Discharge cell at constant-current c/30 rate until terminal volatge equals $V_{min}$
 
       <figure>
-        <img src="{{ '/assets/images/BatteryAi_2-(24).png' | relative_url }}" alt="Battery AI_2-(24)">
+        <img src="{{ '/assets/images/BatteryAI_2-(24).png' | relative_url }}" alt="Battery AI_2-(24)">
       </figure>
 
   - OCV test script #2 (at test temperature)
@@ -297,7 +297,7 @@ use_math: true
     - Charge the cell at constant-current rate of C/30 until cell terminal voltage equals $V_{max}$
 
       <figure>
-        <img src="{{ '/assets/images/BatteryAi_2-(25).png' | relative_url }}" alt="Battery AI_2-(25)">
+        <img src="{{ '/assets/images/BatteryAI_2-(25).png' | relative_url }}" alt="Battery AI_2-(25)">
       </figure>
 
 ## Cell testing to determine coulombic eff ($\eta$) & capacity($Q$)
@@ -311,25 +311,25 @@ use_math: true
     - Assume 1 when full-charged, full-discharged
 
       <figure>
-        <img src="{{ '/assets/images/BatteryAi_2-(26).png' | relative_url }}" alt="Battery AI_2-(26)">
+        <img src="{{ '/assets/images/BatteryAI_2-(26).png' | relative_url }}" alt="Battery AI_2-(26)">
       </figure>
       
   - Capacity
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(27).png' | relative_url }}" alt="Battery AI_2-(27)">
+      <img src="{{ '/assets/images/BatteryAI_2-(27).png' | relative_url }}" alt="Battery AI_2-(27)">
     </figure>
 
 - Processing data for other T
 
   <figure>
-     <img src="{{ '/assets/images/BatteryAi_2-(28).png' | relative_url }}" alt="Battery AI_2-(28)">
+     <img src="{{ '/assets/images/BatteryAI_2-(28).png' | relative_url }}" alt="Battery AI_2-(28)">
   </figure>
   <figure>
-     <img src="{{ '/assets/images/BatteryAi_2-(29).png' | relative_url }}" alt="Battery AI_2-(29)">
+     <img src="{{ '/assets/images/BatteryAI_2-(29).png' | relative_url }}" alt="Battery AI_2-(29)">
   </figure>
   <figure>
-     <img src="{{ '/assets/images/BatteryAi_2-(30).png' | relative_url }}" alt="Battery AI_2-(30)">
+     <img src="{{ '/assets/images/BatteryAI_2-(30).png' | relative_url }}" alt="Battery AI_2-(30)">
   </figure>
 
 🗯️ Therotical & Experimental properties about total-capacity
@@ -346,13 +346,13 @@ use_math: true
   - 총 용량 : 온도에 따른 변화 X
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(31).png' | relative_url }}" alt="Battery AI_2-(31)">
+      <img src="{{ '/assets/images/BatteryAI_2-(31).png' | relative_url }}" alt="Battery AI_2-(31)">
     </figure>
     
   - 실험을 통한 (충전 용량 - 방전 용량) vs (총 용량) 관계
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(32).png' | relative_url }}" alt="Battery AI_2-(32)">
+      <img src="{{ '/assets/images/BatteryAI_2-(32).png' | relative_url }}" alt="Battery AI_2-(32)">
     </figure>
 
     - 저온에서 충전-방전 용량이 변화가 일어난다
@@ -372,7 +372,7 @@ use_math: true
   - Missing charge V at high SOC because of $V_{max}$ (Before SOC 100% reached)
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(33).png' | relative_url }}" alt="Battery AI_2-(33)">
+      <img src="{{ '/assets/images/BatteryAI_2-(33).png' | relative_url }}" alt="Battery AI_2-(33)">
     </figure>
     
 - IDEA of Approximate OCV
@@ -388,10 +388,10 @@ use_math: true
   - $OCVrel(Z(t))$ : linear temperature-correction factor at each SOC
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(34).png' | relative_url }}" alt="Battery AI_2-(34)">
+      <img src="{{ '/assets/images/BatteryAI_2-(34).png' | relative_url }}" alt="Battery AI_2-(34)">
     </figure>
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(35).png' | relative_url }}" alt="Battery AI_2-(35)">
+      <img src="{{ '/assets/images/BatteryAI_2-(35).png' | relative_url }}" alt="Battery AI_2-(35)">
     </figure>
 ---
 
@@ -408,7 +408,7 @@ use_math: true
   - Using UDDS profile for an example
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(36).png' | relative_url }}" alt="Battery AI_2-(36)">
+      <img src="{{ '/assets/images/BatteryAI_2-(36).png' | relative_url }}" alt="Battery AI_2-(36)">
     </figure>
     
 - Dynamic test script #1 (at test T)
@@ -418,7 +418,7 @@ use_math: true
   - Execute dynamic profiles over SOC range of interest
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(37).png' | relative_url }}" alt="Battery AI_2-(37)">
+      <img src="{{ '/assets/images/BatteryAI_2-(37).png' | relative_url }}" alt="Battery AI_2-(37)">
     </figure>
     
 ## Tests Needed to determine dynamic model parameters
@@ -431,7 +431,7 @@ use_math: true
     - Follow-on Dither profile(s) can be used to eliminate hysteresis to the greatest degree possible
 
       <figure>
-        <img src="{{ '/assets/images/BatteryAi_2-(38).png' | relative_url }}" alt="Battery AI_2-(38)">
+        <img src="{{ '/assets/images/BatteryAI_2-(38).png' | relative_url }}" alt="Battery AI_2-(38)">
       </figure>
       
   - Dynamic test script #3 (at 25C)
@@ -441,7 +441,7 @@ use_math: true
     - Follow-on Dither profiles(s) at same reason
       
       <figure>
-        <img src="{{ '/assets/images/BatteryAi_2-(39).png' | relative_url }}" alt="Battery AI_2-(39)">
+        <img src="{{ '/assets/images/BatteryAI_2-(39).png' | relative_url }}" alt="Battery AI_2-(39)">
       </figure>
       
 ## How data used to find dynamic model parameter values
@@ -449,7 +449,7 @@ use_math: true
 - Follow below steps to find parameter values
 
   <figure>
-    <img src="{{ '/assets/images/BatteryAi_2-(40).png' | relative_url }}" alt="Battery AI_2-(40)">
+    <img src="{{ '/assets/images/BatteryAI_2-(40).png' | relative_url }}" alt="Battery AI_2-(40)">
   </figure>
   
   - 1. Compute coulombic efficiency & total capacity
@@ -461,7 +461,7 @@ use_math: true
       - Assume that we solve **OCV in Static Model**
       
       <figure>
-        <img src="{{ '/assets/images/BatteryAi_2-(41).png' | relative_url }}" alt="Battery AI_2-(41)">
+        <img src="{{ '/assets/images/BatteryAI_2-(41).png' | relative_url }}" alt="Battery AI_2-(41)">
       </figure>
       
   - 3. Finding R-C time constants
@@ -474,7 +474,7 @@ use_math: true
     - 맨 아래 definition은  $i_R[k],s[k],h[k]$의 초기값
     
       <figure>
-        <img src="{{ '/assets/images/BatteryAi_2-(42).png' | relative_url }}" alt="Battery AI_2-(42)">
+        <img src="{{ '/assets/images/BatteryAI_2-(42).png' | relative_url }}" alt="Battery AI_2-(42)">
       </figure>
       
   - 6. Solve for linear output parameters
@@ -482,16 +482,16 @@ use_math: true
       - $X = A^{-1}Y$, $X$ parameters(vector) that we want to get
 
       <figure>
-        <img src="{{ '/assets/images/BatteryAi_2-(43).png' | relative_url }}" alt="Battery AI_2-(43)">
+        <img src="{{ '/assets/images/BatteryAI_2-(43).png' | relative_url }}" alt="Battery AI_2-(43)">
       </figure>
       
   - 7. Compute RMS voltage prediction error
 
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(44).png' | relative_url }}" alt="Battery AI_2-(44)">
+      <img src="{{ '/assets/images/BatteryAI_2-(44).png' | relative_url }}" alt="Battery AI_2-(44)">
     </figure>
     <figure>
-      <img src="{{ '/assets/images/BatteryAi_2-(45).png' | relative_url }}" alt="Battery AI_2-(45)">
+      <img src="{{ '/assets/images/BatteryAI_2-(45).png' | relative_url }}" alt="Battery AI_2-(45)">
     </figure>
 
   - 8. Iterate to find best $\gamma$ (adapt hysteresis)
@@ -501,7 +501,7 @@ use_math: true
       - Bisection search is one simple possibility
 
       <figure>
-        <img src="{{ '/assets/images/BatteryAi_2-(46).png' | relative_url }}" alt="Battery AI_2-(46)">
+        <img src="{{ '/assets/images/BatteryAI_2-(46).png' | relative_url }}" alt="Battery AI_2-(46)">
       </figure>
       
 ### Final Result
@@ -510,7 +510,7 @@ use_math: true
 - Figure show 3 R-C pairs ; RMS error 5.7mV (Less than 10mV is well!)
 
 <figure>   
-  <img src="{{ '/assets/images/BatteryAi_2-(47).png' | relative_url }}" alt="Battery AI_2-(47)">
+  <img src="{{ '/assets/images/BatteryAI_2-(47).png' | relative_url }}" alt="Battery AI_2-(47)">
 </figure>
 
 ### Improvement
@@ -529,19 +529,19 @@ use_math: true
 - Paralled-connected modules (PCM)
 
  <figure>
-   <img src="{{ '/assets/images/BatteryAi_2-(48).png' | relative_url }}" alt="Battery AI_2-(48)">
+   <img src="{{ '/assets/images/BatteryAI_2-(48).png' | relative_url }}" alt="Battery AI_2-(48)">
  </figure>
  <figure>
-   <img src="{{ '/assets/images/BatteryAi_2-(49).png' | relative_url }}" alt="Battery AI_2-(49)">
+   <img src="{{ '/assets/images/BatteryAI_2-(49).png' | relative_url }}" alt="Battery AI_2-(49)">
  </figure>
 
 - Series-connected modules (SCM)
 
  <figure>
-   <img src="{{ '/assets/images/BatteryAi_2-(50).png' | relative_url }}" alt="Battery AI_2-(50)">
+   <img src="{{ '/assets/images/BatteryAI_2-(50).png' | relative_url }}" alt="Battery AI_2-(50)">
  </figure>
  <figure>
-   <img src="{{ '/assets/images/BatteryAi_2-(51).png' | relative_url }}" alt="Battery AI_2-(51)">
+   <img src="{{ '/assets/images/BatteryAI_2-(51).png' | relative_url }}" alt="Battery AI_2-(51)">
  </figure>
 
 - Packing을 위해 각 Cell voltage를 추정해야 함 → 등가모델을 구축하는 main reason
