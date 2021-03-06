@@ -66,7 +66,7 @@ use_math: true
   - **Based on electrochemistry**
     - Cell의 전기화학적 특성을 기반으로 설계하는 방식
     
-      <img src="/assets/images/BatteryAI_2-(8).png" alt="Battery_AI_2-(8)" height="255" width="885">
+      <img src="/assets/images/BatteryAI_2-(8).png" alt="Battery_AI_2-(8)" height="285" width="915">
   - $R_0$ : Models the electrolyte resistance (전해질 저항)
   - $R_{ct}$ : is charge-transfer resistance, models voltage drop over the electrode - electrolyte interface due to a load (리튬의 산화-환원 반응에 의해서 생기는 저항)
   - $C_{d1}$ : is double-layer capacitance, models effect of charges building up in the electrolyte at electrode surface (전기 이중층, 전해질과 전극 표면에서 충전되는 전압 존재)
@@ -80,17 +80,17 @@ use_math: true
 ## Equation derivation(Circuit model)
   - General equation ($u(t) : input, \quad x(t): state\; model$)
     - Generically (When $a \ne 0$),
-    <figure>
-      <img src="{{ '/assets/images/BatteryAI_2-(9).png' | relative_url }}" alt="Battery AI_2-(9)">
-    </figure>
+      <figure>
+        <img src="{{ '/assets/images/BatteryAI_2-(9).png' | relative_url }}" alt="Battery AI_2-(9)">
+      </figure>
     - In the special case (When $a = 0$),
-     <figure>
-      <img src="{{ '/assets/images/BatteryAI_2-(10).png' | relative_url }}" alt="Battery AI_2-(10)">
-     </figure>
+      <figure>
+       <img src="{{ '/assets/images/BatteryAI_2-(10).png' | relative_url }}" alt="Battery AI_2-(10)">
+      </figure>
   - Adapt general equation(above) in our model:
-  <figure>
-    <img src="{{ '/assets/images/BatteryAI_2-(11).png' | relative_url }}" alt="Battery AI_2-(11)">
-  </figure>
+    <figure>
+      <img src="{{ '/assets/images/BatteryAI_2-(11).png' | relative_url }}" alt="Battery AI_2-(11)">
+    </figure>
 
 ## **Hysteresis voltages**
   - Hysteresis : the dependence of the state of a system on its history
@@ -169,7 +169,7 @@ use_math: true
 
   - ESC : Output equation
   
-    <img src="/assets/images/BatteryAI_2-(21).png" alt="Battery_AI_2-(21)" height="145" width="930">
+    <img src="/assets/images/BatteryAI_2-(21).png" alt="Battery_AI_2-(21)" height="225" width="1020">
       
   - ESC cell model - Equivalent Circuit
     <figure>
@@ -234,7 +234,7 @@ use_math: true
   - 리튬 화학물질 : 온도에 따른 Coulombic effiency 변화
   - 총 용량 : 온도에 따른 변화 X
  
-    <img src="/assets/images/BatteryAI_2-(31).png" alt="Battery_AI_2-(31)" height="296" width="910">
+    <img src="/assets/images/BatteryAI_2-(31).png" alt="Battery_AI_2-(31)" height="326" width="940">
   - 실험을 통한 (충전 용량 - 방전 용량) vs (총 용량) 관계
     <figure>
       <img src="{{ '/assets/images/BatteryAI_2-(32).png' | relative_url }}" alt="Battery AI_2-(32)">
@@ -261,9 +261,10 @@ use_math: true
   - $OCV0(Z(t))$ : OCV relationship at 0 C
   - $OCVrel(Z(t))$ : linear temperature-correction factor at each SOC
  
-    <img src="/assets/images/BatteryAI_2-(34).png" alt="Battery_AI_2-(34)" height="100" width="675">
+    <img src="/assets/images/BatteryAI_2-(34).png" alt="Battery_AI_2-(34)" height="130" width="705">
     
-    <img src="/assets/images/BatteryAI_2-(35).png" alt="Battery_AI_2-(35)" height="316" width="930">
+    <img src="/assets/images/BatteryAI_2-(35).png" alt="Battery_AI_2-(35)" height="346" width="960">
+
 
 # **Identify Parameters of Dynamic Model**
 ## Needed to determine dynamic model parameters
