@@ -29,8 +29,10 @@ use_math: true
 - Coulombic efficiency
   - (Charge out) / (Charge in) [unit: 충전량]
 - Modeling OCV & SOC - Equivalent Curcuit
+
   <img src="/assets/images/BatteryAI_2-(2).png" alt="Battery_AI_2-(2)" height="260" width="350">
 - Continuous time
+  
   <img src="/assets/images/BatteryAI_2-(3).png" alt="Battery_AI_2-(3)" height="95" width="275">
 - Discrete time
   <figure>
@@ -47,7 +49,8 @@ use_math: true
 - Caused by slow diffusion processes in the cell
 - Voltage dosen't immediately return to OCV(relaxes gradually)
 - Example
-  <img src="/assets/images/BatteryAI_2-(5).png" alt="Battery_AI_2-(5)" height="235" width="345">
+
+  <img src="/assets/images/BatteryAI_2-(5).png" alt="Battery_AI_2-(5)" height="275" width="385">
   - 20 min 동안 constant current(?)로 discharge
   - 20 min ~ 60 min : Resting → Slow diffusion 현상으로 인한 일정 전압 상승
 
@@ -62,7 +65,8 @@ use_math: true
 ## Modeling with Randles Circuit
   - **Based on electrochemistry**
     - Cell의 전기화학적 특성을 기반으로 설계하는 방식
-    <img src="/assets/images/BatteryAI_2-(8).png" alt="Battery_AI_2-(8)" height="225" width="855">
+    
+    <img src="/assets/images/BatteryAI_2-(8).png" alt="Battery_AI_2-(8)" height="255" width="885">
   - $R_0$ : Models the electrolyte resistance (전해질 저항)
   - $R_{ct}$ : is charge-transfer resistance, models voltage drop over the electrode - electrolyte interface due to a load (리튬의 산화-환원 반응에 의해서 생기는 저항)
   - $C_{d1}$ : is double-layer capacitance, models effect of charges building up in the electrolyte at electrode surface (전기 이중층, 전해질과 전극 표면에서 충전되는 전압 존재)
@@ -107,6 +111,7 @@ use_math: true
     </figure>
 
   - Experiment result of setting hysteresis model
+
   <img src="/assets/images/BatteryAI_2-(14).png" alt="Battery_AI_2-(14)" height="260" width="400">
    - 전압, SOC 측정 시 매우 좋지 못한 현상 → 완전 충전, 완전 방전 부분에서 voltage 값이 튀는 부분
    - 이를 제거하여 SOC와 voltage에 대한 single curve를 얻기 위함
@@ -133,8 +138,8 @@ use_math: true
     - Left side becomes $\dot h(t)$; on right side, note $\dot z sgn(\dot z) = \mid\dot z\mid$ and $\dot z(t) = -\eta(t)i(t)/Q$
       <figure>
         <img src="{{ '/assets/images/BatteryAI_2-(17).png' | relative_url }}" alt="Battery AI_2-(17)">
+        <figcaption>Continuous Hysteresis model</figcaption>
       </figure>
-    - So we can have continuous hysteresis model
 
   - Convert to discrete time
     <figure>
@@ -144,7 +149,6 @@ use_math: true
     - **Untiless hysteresis state**
       - 실험 도중(Optimizing model parameter values) 유용한 방정식이 아닌 것이 밝혀져, re-write 한 equation.
       - Re-write in equivalent but slightly different representation, which has $-1 \leq h[k] \leq 1$
-
   - **순간적 hysteresis 변화에 따른 model equation** ⇒ Dynamic model part에서 다룰 부분!
     - Defining new value, $s[k]$ which must get 1 or -1
       <figure>
@@ -156,7 +160,6 @@ use_math: true
     - **SOC-OCV**
     - **Ohmic R - diffusion V**
     - **Hysteresis**
-
   - ESC : State equation - matrix form
     <figure>
       <img src="{{ '/assets/images/BatteryAI_2-(20).png' | relative_url }}" alt="Battery AI_2-(20)">
@@ -165,7 +168,8 @@ use_math: true
     - $x[k]$ : SOC - Ohmic R - Hysteresis 상태의 Vector(List) 표현
 
   - ESC : Output equation
-    <img src="/assets/images/BatteryAI_2-(21).png" alt="Battery_AI_2-(21)" height="65" width="850">
+  
+    <img src="/assets/images/BatteryAI_2-(21).png" alt="Battery_AI_2-(21)" height="95" width="880">
       
   - ESC cell model - Equivalent Circuit
     <figure>
@@ -174,20 +178,17 @@ use_math: true
     <figure>
       <img src="{{ '/assets/images/BatteryAI_2-(23).png' | relative_url }}" alt="Battery AI_2-(23)">
     </figure>
-
   - IDEA of ESC cell model
     - Design function $f$ to predict terminal voltage of cell!
     - Input : $x[k], u[k]$
     - $f$ is universal function form for simulation
     - But, how we know about OCV? Is it defined from manufacturer?
-
   - My interpretation of ESC cell model
     - 정의되지 않은 $f$ 를 시뮬레이션을 통해 설계했을 때, 우리는 cell의 terminal voltage $v[k]$ 를 추정할 수 있다
     - 추정한 $v[k]$가 실제 $v[k]$를 잘 following 한다면 우리는 SOC-OCV 정의로부터 $Z[k]$, 즉 $v[k]$ 에 대응하는 보다 정확한 SOC를 추정할 수 있다!
 
 # **Identify Parameters of Static Model**
   - Long time에 대해 온도 변화에 따른 Coulombic eff & Capacity → OCV & SOC 관계
-
 ## Cell testing steps
   - OCV test script #1 (at test temperature)
     - 100% charged, test T
@@ -195,14 +196,12 @@ use_math: true
       <figure>
         <img src="{{ '/assets/images/BatteryAI_2-(24).png' | relative_url }}" alt="Battery AI_2-(24)">
       </figure>
-
   - OCV test script #2 (at test temperature)
     - Test T
     - Charge the cell at constant-current rate of C/30 until cell terminal voltage equals $V_{max}$
       <figure>
         <img src="{{ '/assets/images/BatteryAI_2-(25).png' | relative_url }}" alt="Battery AI_2-(25)">
       </figure>
-
 ## Cell testing to determine coulombic eff ($\eta$) & capacity($Q$)
 - The test steps for OCV testing in 25 C
 - Processing data for 25 C
@@ -212,6 +211,7 @@ use_math: true
         <img src="{{ '/assets/images/BatteryAI_2-(26).png' | relative_url }}" alt="Battery AI_2-(26)">
       </figure>
   - Capacity
+  
     <img src="/assets/images/BatteryAI_2-(27).png" alt="Battery_AI_2-(27)" height="78" width="315">
 
 - Processing data for other T
@@ -241,32 +241,28 @@ use_math: true
     - 즉, 상온에서는 총 용량의 therotical properties에 따라 충전-방전 용량도 변화하지 않는다.
 
 ## Cell testing to determine OCV & SOC(1)
-
 - DOD(Depth of Discharge)
   - $DOD(t)/Q = 1 - SOC(t)$
   - depth of discharge(t) = total Ah discharged until t - [ $\eta(25C) \; \times$ total Ah charged at 25C until t ] - [ $\eta(T) \; \times$ total Ah charged at temperature T until t ]
-
 - Missing data?
   - Missing discharge V at low SOC because of $V_{min}$ (Before SOC 0% reached)
   - Missing charge V at high SOC because of $V_{max}$ (Before SOC 100% reached)
     <figure>
       <img src="{{ '/assets/images/BatteryAI_2-(33).png' | relative_url }}" alt="Battery AI_2-(33)">
     </figure>
-    
 - IDEA of Approximate OCV
   - Because of missing data, Approximate OCV is followed charge voltage in low SOC, discharge voltage in high SOC!
 
 ## Cell testing to determine OCV & SOC(2)
-
 - Modeling temperature dependence
   - Combine individual approximate single-temperature OCV
   - $OCV0(Z(t))$ : OCV relationship at 0 C
   - $OCVrel(Z(t))$ : linear temperature-correction factor at each SOC
-    <img src="/assets/images/BatteryAI_2-(34).png" alt="Battery_AI_2-(34)" height="50" width="625">
-    <img src="/assets/images/BatteryAI_2-(35).png" alt="Battery_AI_2-(35)" height="266" width="880">
+    <img src="/assets/images/BatteryAI_2-(34).png" alt="Battery_AI_2-(34)" height="70" width="645">
+    
+    <img src="/assets/images/BatteryAI_2-(35).png" alt="Battery_AI_2-(35)" height="286" width="900">
 
 # **Identify Parameters of Dynamic Model**
-
 ## Needed to determine dynamic model parameters
 - Application : 전기 자동차, 휴대전화 ... etc.
 - 짧은 시간에 대해 온도에 따른 Coulombic eff & Capacity → OCV & SOC 관계
@@ -335,7 +331,8 @@ use_math: true
       - Iterate step 5 ~ 8
       - Iterate until satisfied "close enough" to best
       - Bisection search is one simple possibility
-      <img src="/assets/images/BatteryAI_2-(46).png" alt="Battery_AI_2-(46)" height="248" width="286">
+
+      <img src="/assets/images/BatteryAI_2-(46).png" alt="Battery_AI_2-(46)" height="268" width="306">
       
 ### Final Result
 - Final model is able to predict cell voltage very well...
@@ -355,10 +352,13 @@ use_math: true
  <figure>
    <img src="{{ '/assets/images/BatteryAI_2-(48).png' | relative_url }}" alt="Battery AI_2-(48)">
  </figure>
- <img src="/assets/images/BatteryAI_2-(49).png" alt="Battery_AI_2-(49)" height="278" width="173">
+ 
+ <img src="/assets/images/BatteryAI_2-(49).png" alt="Battery_AI_2-(49)" height="378" width="273">
 
 - Series-connected modules (SCM)
+ 
  <img src="/assets/images/BatteryAI_2-(50).png" alt="Battery_AI_2-(50)" height="120" width="270">
+ 
  <img src="/assets/images/BatteryAI_2-(51).png" alt="Battery_AI_2-(51)" height="410" width="360">
 - Packing을 위해 각 Cell voltage를 추정해야 함 → 등가모델을 구축하는 main reason
 
