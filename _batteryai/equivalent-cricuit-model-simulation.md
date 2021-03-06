@@ -10,12 +10,16 @@ use_math: true
 
 :star:[Algorithms for Battery Mangement Systems course, Prof. Gregory Plett](https://www.coursera.org/specializations/algorithms-for-battery-management-systems)
 
+---
+
 # **Which part that we handle in this time?**
 - **Measure voltage, current, temperature** → From designing Equivalent Cricuit Model!
   <figure>
     <img src="{{ '/assets/images/BatteryAI_2-(1).png' | relative_url }}" alt="Battery AI_2-(1)">
   </figure>
-  
+
+---
+
 # **Defining an Equivalent Circuit Model of Li-Ion Cell**
 ## Modeling OCV & SOC
 - OCV (Open Circuit Voltage)
@@ -188,6 +192,8 @@ use_math: true
     - 정의되지 않은 $f$ 를 시뮬레이션을 통해 설계했을 때, 우리는 cell의 terminal voltage $v[k]$ 를 추정할 수 있다
     - 추정한 $v[k]$가 실제 $v[k]$를 잘 following 한다면 우리는 SOC-OCV 정의로부터 $Z[k]$, 즉 $v[k]$ 에 대응하는 보다 정확한 SOC를 추정할 수 있다!
 
+---
+
 # **Identify Parameters of Static Model**
   - Long time에 대해 온도 변화에 따른 Coulombic eff & Capacity → OCV & SOC 관계
 ## Cell testing steps
@@ -266,6 +272,7 @@ use_math: true
     
     <img src="/assets/images/BatteryAI_2-(35).png" alt="Battery_AI_2-(35)" height="346" width="960">
 
+---
 
 # **Identify Parameters of Dynamic Model**
 ## Needed to determine dynamic model parameters
@@ -351,6 +358,8 @@ use_math: true
 - Refinement OCV prediction error
 - Finding unknown phenomenon
 
+---
+
 # **Simulating Battery Packs in different configurations**
 ## Cells for battery packing
 - Paralled-connected modules (PCM)
@@ -366,6 +375,8 @@ use_math: true
  
  <img src="/assets/images/BatteryAI_2-(51).png" alt="Battery_AI_2-(51)" height="410" width="360">
 - Packing을 위해 각 Cell voltage를 추정해야 함 → 등가모델을 구축하는 main reason
+
+---
 
 # **Summary**
 ## Why we design Equivalent Circuit?
