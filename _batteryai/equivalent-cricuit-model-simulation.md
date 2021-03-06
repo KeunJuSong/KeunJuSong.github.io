@@ -7,6 +7,7 @@ use_math: true
 
 # **Reference**
 :star:NICELAB Seminar
+
 :star:[Algorithms for Battery Mangement Systems course, Prof. Gregory Plett](https://www.coursera.org/specializations/algorithms-for-battery-management-systems)
 
 # **Which part that we handle in this time?**
