@@ -66,7 +66,7 @@ use_math: true
   - **Based on electrochemistry**
     - Cell의 전기화학적 특성을 기반으로 설계하는 방식
     
-    <img src="/assets/images/BatteryAI_2-(8).png" alt="Battery_AI_2-(8)" height="255" width="885">
+      <img src="/assets/images/BatteryAI_2-(8).png" alt="Battery_AI_2-(8)" height="255" width="885">
   - $R_0$ : Models the electrolyte resistance (전해질 저항)
   - $R_{ct}$ : is charge-transfer resistance, models voltage drop over the electrode - electrolyte interface due to a load (리튬의 산화-환원 반응에 의해서 생기는 저항)
   - $C_{d1}$ : is double-layer capacitance, models effect of charges building up in the electrolyte at electrode surface (전기 이중층, 전해질과 전극 표면에서 충전되는 전압 존재)
@@ -112,7 +112,7 @@ use_math: true
 
   - Experiment result of setting hysteresis model
 
-  <img src="/assets/images/BatteryAI_2-(14).png" alt="Battery_AI_2-(14)" height="260" width="400">
+    <img src="/assets/images/BatteryAI_2-(14).png" alt="Battery_AI_2-(14)" height="260" width="400">
    - 전압, SOC 측정 시 매우 좋지 못한 현상 → 완전 충전, 완전 방전 부분에서 voltage 값이 튀는 부분
    - 이를 제거하여 SOC와 voltage에 대한 single curve를 얻기 위함
 
@@ -169,7 +169,7 @@ use_math: true
 
   - ESC : Output equation
   
-    <img src="/assets/images/BatteryAI_2-(21).png" alt="Battery_AI_2-(21)" height="95" width="880">
+    <img src="/assets/images/BatteryAI_2-(21).png" alt="Battery_AI_2-(21)" height="145" width="930">
       
   - ESC cell model - Equivalent Circuit
     <figure>
@@ -202,6 +202,7 @@ use_math: true
       <figure>
         <img src="{{ '/assets/images/BatteryAI_2-(25).png' | relative_url }}" alt="Battery AI_2-(25)">
       </figure>
+
 ## Cell testing to determine coulombic eff ($\eta$) & capacity($Q$)
 - The test steps for OCV testing in 25 C
 - Processing data for 25 C
@@ -232,7 +233,8 @@ use_math: true
 - Experimental : 온도에 의해 변화되는 discharge capacity와 charge capacity를 통해 total capacity를 추정할 수 있음!
   - 리튬 화학물질 : 온도에 따른 Coulombic effiency 변화
   - 총 용량 : 온도에 따른 변화 X
-    <img src="/assets/images/BatteryAI_2-(31).png" alt="Battery_AI_2-(31)" height="266" width="880">
+ 
+    <img src="/assets/images/BatteryAI_2-(31).png" alt="Battery_AI_2-(31)" height="296" width="910">
   - 실험을 통한 (충전 용량 - 방전 용량) vs (총 용량) 관계
     <figure>
       <img src="{{ '/assets/images/BatteryAI_2-(32).png' | relative_url }}" alt="Battery AI_2-(32)">
@@ -258,9 +260,10 @@ use_math: true
   - Combine individual approximate single-temperature OCV
   - $OCV0(Z(t))$ : OCV relationship at 0 C
   - $OCVrel(Z(t))$ : linear temperature-correction factor at each SOC
-    <img src="/assets/images/BatteryAI_2-(34).png" alt="Battery_AI_2-(34)" height="70" width="645">
+ 
+    <img src="/assets/images/BatteryAI_2-(34).png" alt="Battery_AI_2-(34)" height="100" width="675">
     
-    <img src="/assets/images/BatteryAI_2-(35).png" alt="Battery_AI_2-(35)" height="286" width="900">
+    <img src="/assets/images/BatteryAI_2-(35).png" alt="Battery_AI_2-(35)" height="316" width="930">
 
 # **Identify Parameters of Dynamic Model**
 ## Needed to determine dynamic model parameters
@@ -353,7 +356,7 @@ use_math: true
    <img src="{{ '/assets/images/BatteryAI_2-(48).png' | relative_url }}" alt="Battery AI_2-(48)">
  </figure>
  
- <img src="/assets/images/BatteryAI_2-(49).png" alt="Battery_AI_2-(49)" height="378" width="273">
+ <img src="/assets/images/BatteryAI_2-(49).png" alt="Battery_AI_2-(49)" height="338" width="233">
 
 - Series-connected modules (SCM)
  
