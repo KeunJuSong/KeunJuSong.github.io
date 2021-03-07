@@ -157,7 +157,7 @@ use_math: true
 - $\therefore \widehat x_k^+ = \mathbb E[x_k \mid \mathbb Y_k]$
 
 🗯️ Additional vector calculus
-${d\over dX}Y^T X = Y$, ${d \over dX}X^T Y = Y$, and ${d \over dX}X^T A X = (A + A^T)X$
+- ${d\over dX}Y^T X = Y$, ${d \over dX}X^T Y = Y$, and ${d \over dX}X^T A X = (A + A^T)X$
 
 ## Prediction error and Innovation
 - Prediction error
