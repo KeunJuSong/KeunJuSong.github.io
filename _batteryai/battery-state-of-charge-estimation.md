@@ -147,7 +147,7 @@ use_math: true
 - quantity : $\widehat x^+$  or $\widehat x^-$
 
 ## Cost function to minimize (optimize)
-- $\widehat x_k^{MMSE}(\mathbb Y_k) = \underset{\widehat x_k}{\operatorname{argmin}}(\mathbb E[\;||x_k - \widehat x_k^+||_2^2\mid \mathbb Y_k\;])$
+- $\widehat x_k^{MMSE}(\mathbb Y_k) = \underset{\widehat x_k}{\operatorname{argmin}}(\mathbb E[\;\mid\mid x_k - \widehat x_k^+\mid\mid_2^2\mid \mathbb Y_k\;])$
   
   $\qquad\qquad\quad\;\, = \underset{\widehat x_k}{\operatorname{argmin}}(\mathbb E[\;(x_k - \widehat x_k^+)^T(x_k - \widehat x_k^+)\mid \mathbb Y_k\;])$
   
@@ -165,7 +165,7 @@ use_math: true
   $\tilde x_k^- = x_k - \widehat x_k^- \; where \; \widehat x_k^- = E[x_k \mid Y_{k-1}]$ 
 - Innovation
   
-  $\tilde y_k = y_k - \widehat y _k \; where \; \tilde y_k = E[y_k \mid Y_{k-1}]$
+  $\tilde y_k = y_k - \widehat y_k \; where \; \tilde y_k = E[y_k \mid Y_{k-1}]$
 - Properties can be like this:
   $\mathbb E[\tilde x_k^-] = \mathbb E[x_k] - \mathbb E[\mathbb E[x_k \mid \mathbb Y_{k-1}]] = \mathbb E[x_k] - \mathbb E[x_k] = 0 \\ \mathbb E[\tilde y_k] = \mathbb E[y_k] - \mathbb E[\mathbb E[y_k \mid \mathbb Y_{k-1}]] = \mathbb E[y_k] - \mathbb E[y_k] = 0$
 
