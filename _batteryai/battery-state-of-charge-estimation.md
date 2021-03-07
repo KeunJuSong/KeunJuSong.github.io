@@ -99,19 +99,27 @@ use_math: true
 # Voltage-based method to estimate SOC
 - OCV is a deterministic function of SOC, $OCV(z(t))$
 - Measure cell terminal voltage, v(t), and look up on OCV versus SOC curve
-  **Photo position 1**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAI_3-(1).png' | relative_url }}" alt="Battery AI_3-(1)">
+  </figure>
 - Ignores effects of  $i(t) \times R_0$ losses (내부저항), diffusion voltages, and hysteresis on $v(t)$
-  **Photo position 2**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAI_3-(2).png' | relative_url }}" alt="Battery AI_3-(2)">
+  </figure>
 - Allow effect of  $i(t) \times R_0$ losses (내부저항)
   - $v(t) = OCV(z(t)) - i(t)R_0$
   - Better, but still ignores effects of diffusion voltages, hysteresis and so is still noisy
   - Filtering helps but adds delay, which must be accounted for
-    **Photo position 3**
+    <figure>
+      <img src="{{ '/assets/images/BatteryAI_3-(3).png' | relative_url }}" alt="Battery AI_3-(3)">
+    </figure>
 
 ---
 
 # Current-based method to estimate SOC
-**Photo position 4**
+<figure>
+  <img src="{{ '/assets/images/BatteryAI_3-(4).png' | relative_url }}" alt="Battery AI_3-(4)">
+</figure>
 - Okay for short periods of operation when initial conditions are known or can be frequently **reset** (for long periods)
 - Subject to drift due to current sensor’s fluctuations, current-sensor bias, incorrect capacity estimate, other losses
 - Uncertainty/error bounds grow (without limit) over time until estimate is **reset**
@@ -119,7 +127,9 @@ use_math: true
 ---
 
 # Model-based state estimation
-**Photo position 5**
+<figure>
+  <img src="{{ '/assets/images/BatteryAI_3-(5).png' | relative_url }}" alt="Battery AI_3-(5)">
+</figure>
 - Model-based estimators implement algorithms that use sensed measurements to infer internal hidden state of dynamic system
 - Same input propagated through true system, model, measured and predicted outputs compared; error used to update model’s state estimate
 - Combination of [Voltage-based method]() and [Current-based method]()
@@ -131,7 +141,9 @@ use_math: true
 
 ## Linear Kalman filter
 - Kalman filter gives optimal state estimate
-  **Photo position 6**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAI_3-(6).png' | relative_url }}" alt="Battery AI_3-(6)">
+  </figure>
   $u_k$ : measured input signal - Cell current
   $w_k$ : process-noise random input
   $v_k$ : sensor-noise random input
@@ -182,23 +194,25 @@ use_math: true
 
   $\mathbb E[x\mid y] = \mathbb E[x] + \Sigma_{\tilde x \tilde y}\Sigma_{\tilde y}^-(y - \mathbb E[y]), \quad \Sigma \; is \; covariance \; matrix$ 
 - Applying this equation to our problem, we get
-  
-  **Photo position 7**
-  
+  <figure>
+    <img src="{{ '/assets/images/BatteryAI_3-(7).png' | relative_url }}" alt="Battery AI_3-(7)">
+  </figure>
   $\therefore \widehat x_k^+ = \widehat x_k^- + L_k\tilde y_k, \quad L \; is \; Kalman \; gain$
 
 ## Uncertainty of state estimate
 - Calculation of $\Sigma_{\tilde x, k}^+$,
-  
-  **Photo position 8**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAI_3-(8).png' | relative_url }}" alt="Battery AI_3-(8)">
+  </figure>
 - $\widehat x_k^+ \pm 3 \sqrt{diag(\Sigma_{\tilde x,k}^+)}$,  3 is something specific scaling factor of probability(%)
 - Boundary를 형성하여 추정의 정확성을 판단
 
 ## Visualizing the linear Kalman filter
 - $A, \; B$ matrix → State space model notation
 - $C, \; D$ matrix → Model notation of representing output from state and input
-  
-  **Photo position 9**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAI_3-(9).png' | relative_url }}" alt="Battery AI_3-(9)">
+  </figure>
 
 ---
 
@@ -218,8 +232,12 @@ use_math: true
 
 # Prediction steps of nonlinear Kalman filters
 - EKF and SPKF both follows same set of general steps as KF
-  **Photo position 10**
-  **Photo position 11**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAI_3-(10).png' | relative_url }}" alt="Battery AI_3-(10)">
+  </figure>
+  <figure>
+    <img src="{{ '/assets/images/BatteryAI_3-(11).png' | relative_url }}" alt="Battery AI_3-(11)">
+  </figure>
 - EKF and SPKF simply have different expressions from KF for evaluating the expectation operations (in Step 1a, 2a) → Because of different system model
 
 ---
@@ -233,7 +251,9 @@ use_math: true
 - EKF was executed for a test having dynamic profiles from 100% SOC down to around 10% SOC
   - RMS SOC estimation error = 0.46%
   - Percent of time error outside bounds = 0%
-    **Photo position 12**
+    <figure>
+      <img src="{{ '/assets/images/BatteryAI_3-(12).png' | relative_url }}" alt="Battery AI_3-(12)">
+    </figure>
 
 ---
 
@@ -248,7 +268,9 @@ use_math: true
 ## Defining the pack-average state / cell-difference states
 - We define pack-average state **x-bar** as $\bar x = {1\over N_s}\sum_{i=1}^{N_s}x_k^{(i)}$
 - Can then write an individual cell’s state vector as $x_k^{(i)} = \bar x_k + \Delta x_k^{(i)}$
-  **Photo position 13**
+  <figure>
+    <img src="{{ '/assets/images/BatteryAI_3-(13).png' | relative_url }}" alt="Battery AI_3-(13)">
+  </figure>
 - Complexity
   - Bar filter is of same computational complexity as individual state estimators used as a basis
   - But, delta filters can be made very simple
