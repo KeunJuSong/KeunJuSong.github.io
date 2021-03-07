@@ -4,7 +4,7 @@ excerpt: "Why estimating SOC is main part in BMS, Methods & classical approach a
 toc: true
 use_math: true
 ---
-# Battery AI - Battery State-of-Charge Estimation
+# Battery State-of-Charge Estimation
 
 # Reference
 :star: **NICELABE Seminar Lecture Note**
