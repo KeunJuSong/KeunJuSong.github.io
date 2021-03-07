@@ -132,11 +132,11 @@ use_math: true
 </figure>
 - Model-based estimators implement algorithms that use sensed measurements to infer internal hidden state of dynamic system
 - Same input propagated through true system, model, measured and predicted outputs compared; error used to update model’s state estimate
-- Combination of [Voltage-based method]() and [Current-based method]()
+- Combination of [Voltage-based method](https://keunjusong.github.io/batteryai/battery-state-of-charge-estimation/#voltage-based-method-to-estimate-soc) and [Current-based method](https://keunjusong.github.io/batteryai/battery-state-of-charge-estimation/#current-based-method-to-estimate-soc)
 - Apply this estimation to Battery, parameters would be like this:
   - Input : Cell current
   - Output : Cell terminal voltage
-  - Model : e.g., [ESC](https://www.notion.so/Battery-AI-Equivalent-Cricuit-Model-Simulation-85388bde23734bdf9f84636682d8bf9c)
+  - Model : e.g., [ESC](https://keunjusong.github.io/batteryai/equivalent-cricuit-model-simulation/#escenhanced-self-correction-cell-model)
   - Output error 요소 : State 추정 오차, 측정 오차 (Process, Sensor), Model 오차
 
 ## Linear Kalman filter
