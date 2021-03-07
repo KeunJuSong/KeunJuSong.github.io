@@ -161,8 +161,10 @@ use_math: true
 
 ## Prediction error and Innovation
 - Prediction error
+  
   $\tilde x_k^- = x_k - \widehat x_k^- \; where \; \widehat x_k^- = E[x_k \mid Y_{k-1}]$ 
 - Innovation
+  
   $\tilde y_k = y_k - \widehat y _k \; where \; \tilde y_k = E[y_k \mid Y_{k-1}]$
 - Properties can be like this:
   $\mathbb E[\tilde x_k^-] = \mathbb E[x_k] - \mathbb E[\mathbb E[x_k \mid \mathbb Y_{k-1}]] = \mathbb E[x_k] - \mathbb E[x_k] = 0 \\ \mathbb E[\tilde y_k] = \mathbb E[y_k] - \mathbb E[\mathbb E[y_k \mid \mathbb Y_{k-1}]] = \mathbb E[y_k] - \mathbb E[y_k] = 0$
@@ -172,17 +174,21 @@ use_math: true
   $\mathbb E[\tilde x_k^- \mid \mathbb Y_{k-1}] = \mathbb E[x_k - \mathbb E[x_k \mid \mathbb Y_{k-1}] \mid \mathbb Y_{k-1}] = 0 = \mathbb E[\tilde x_k^-] \\ \mathbb E[\tilde x_k^- \mid \mathbb Y_k] = \mathbb E[\tilde x_k^- \mid \mathbb Y_{k-1},y_k] = \mathbb E[\tilde x_k^- \mid y_k]$ 
   $\mathbb E[\tilde x_k^- \mid \mathbb Y_k] = \mathbb E[x_k \mid \mathbb Y_k] - \mathbb E[\widehat x_k^- \mid \mathbb Y_k] = \widehat x_k^+ - \widehat x_k^-$
 - Predict/correct sequence of steps
+
   $\therefore \widehat x_k^+ = \widehat x_k^- + \mathbb E[\tilde x_k^- \mid y_k]$
   
 ## State update equation
 - General equation
   $\mathbb E[x\mid y] = \mathbb E[x] + \Sigma_{\tilde x \tilde y}\Sigma_{\tilde y}^-(y - \mathbb E[y]), \quad \Sigma \; is \; covariance \; matrix$ 
 - Applying this equation to our problem, we get
+  
   **Photo position 7**
+  
   $\therefore \widehat x_k^+ = \widehat x_k^- + L_k\tilde y_k, \quad L \; is \; Kalman \; gain$
 
 ## Uncertainty of state estimate
 - Calculation of $\Sigma_{\tilde x, k}^+$,
+  
   **Photo position 8**
 - $\widehat x_k^+ \pm 3 \sqrt{diag(\Sigma_{\tilde x,k}^+)}$,  3 is something specific scaling factor of probability(%)
 - Boundary를 형성하여 추정의 정확성을 판단
@@ -190,6 +196,7 @@ use_math: true
 ## Visualizing the linear Kalman filter
 - $A, \; B$ matrix → State space model notation
 - $C, \; D$ matrix → Model notation of representing output from state and input
+  
   **Photo position 9**
 
 ---
