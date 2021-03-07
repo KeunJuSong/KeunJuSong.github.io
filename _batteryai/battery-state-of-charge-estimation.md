@@ -4,7 +4,6 @@ excerpt: "Why estimating SOC is main part in BMS, Methods & classical approach a
 toc: true
 use_math: true
 ---
-# Battery State-of-Charge Estimation
 
 # Reference
 :star: **NICELABE Seminar Lecture Note**
@@ -167,6 +166,7 @@ use_math: true
   
   $\tilde y_k = y_k - \widehat y_k \; where \; \tilde y_k = E[y_k \mid Y_{k-1}]$
 - Properties can be like this:
+
   $\mathbb E[\tilde x_k^-] = \mathbb E[x_k] - \mathbb E[\mathbb E[x_k \mid \mathbb Y_{k-1}]] = \mathbb E[x_k] - \mathbb E[x_k] = 0 \\ \mathbb E[\tilde y_k] = \mathbb E[y_k] - \mathbb E[\mathbb E[y_k \mid \mathbb Y_{k-1}]] = \mathbb E[y_k] - \mathbb E[y_k] = 0$
 
 ## Predict / correct solution
@@ -179,6 +179,7 @@ use_math: true
   
 ## State update equation
 - General equation
+
   $\mathbb E[x\mid y] = \mathbb E[x] + \Sigma_{\tilde x \tilde y}\Sigma_{\tilde y}^-(y - \mathbb E[y]), \quad \Sigma \; is \; covariance \; matrix$ 
 - Applying this equation to our problem, we get
   
