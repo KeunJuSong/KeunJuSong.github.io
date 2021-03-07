@@ -148,7 +148,9 @@ use_math: true
 
 ## Cost function to minimize (optimize)
 - $\widehat x_k^{MMSE}(\mathbb Y_k) = \underset{\widehat x_k}{\operatorname{argmin}}(\mathbb E[\;||x_k - \widehat x_k^+||_2^2\mid \mathbb Y_k\;])$
-  $$$\qquad\qquad\quad\;\, = \underset{\widehat x_k}{\operatorname{argmin}}(\mathbb E[\;(x_k - \widehat x_k^+)^T(x_k - \widehat x_k^+)\mid \mathbb Y_k\;])$
+  
+  $\qquad\qquad\quad\;\, = \underset{\widehat x_k}{\operatorname{argmin}}(\mathbb E[\;(x_k - \widehat x_k^+)^T(x_k - \widehat x_k^+)\mid \mathbb Y_k\;])$
+  
   $\qquad\qquad\quad\;\, = \underset{\widehat x_k}{\operatorname{argmin}}(\mathbb E[\;x_k^Tx_k - 2x_k^T \widehat x_k^+ + (\widehat x_k^+)^T \widehat x_k^+ \mid \mathbb Y_k\;])$
 - $0 = {d \over d\widehat x_k^+} \mathbb E[\; x_k^+ x_k - 2x_k^T \widehat x_k^+ + (\widehat x_k^+) \widehat x_k^+ \mid \mathbb Y_k \;]$
 - $0 = \mathbb E[-2(x_k - x_k^+) \mid \mathbb Y_k] = 2 \widehat x_k^+ - 2\mathbb E[x_k \mid \mathbb Y_k]$
