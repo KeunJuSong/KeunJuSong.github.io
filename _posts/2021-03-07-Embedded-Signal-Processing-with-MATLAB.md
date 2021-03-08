@@ -27,4 +27,4 @@ tags: [matlab, digital-signal-processing]
   8. Digital Filter
   9. Audio Equalizer
 * With main idea and features of each category, implement its algorithm in MATLAB
-* More detailed description of each part of category is in my Github. Go and refer them.
+* More detailed descriptions of each part of categories are in my Github. Go and refer them.
